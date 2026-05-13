@@ -683,3 +683,110 @@ body::before{
   text-shadow:
     0 0 18px rgba(0,0,0,.35);
 }
+/* SECTION SEPARATORS */
+
+.services-section,
+.references,
+.domains,
+.tech,
+.contact{
+  position:relative;
+}
+
+/* TOP LIGHT LINE */
+
+.services-section::before,
+.references::before,
+.domains::before,
+.tech::before,
+.contact::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:80%;
+  height:1px;
+
+  background:
+    linear-gradient(
+      to right,
+      transparent,
+      rgba(111,92,255,.28),
+      transparent
+    );
+}
+
+/* AMBIENT SECTION LIGHT */
+
+.services-section::after,
+.references::after,
+.domains::after,
+.tech::after,
+.contact::after{
+  content:"";
+  position:absolute;
+
+  width:500px;
+  height:500px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0,170,255,.06),
+      transparent 70%
+    );
+
+  top:50%;
+  left:50%;
+
+  transform:
+    translate(-50%,-50%);
+
+  filter:blur(40px);
+
+  z-index:-1;
+
+  pointer-events:none;
+}
+
+/* SECTION TITLES PREMIUM */
+
+.services-section h2,
+.references h2,
+.domains h2,
+.tech h2,
+.contact h2{
+  position:relative;
+  display:inline-block;
+}
+
+/* TITLE GLOW */
+
+.services-section h2::after,
+.references h2::after,
+.domains h2::after,
+.tech h2::after,
+.contact h2::after{
+  content:"";
+  position:absolute;
+
+  left:0;
+  bottom:-12px;
+
+  width:80px;
+  height:4px;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      to right,
+      #64d8ff,
+      #8b5cf6
+    );
+
+  box-shadow:
+    0 0 18px #8b5cf6aa;
+}
