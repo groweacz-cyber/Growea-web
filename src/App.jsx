@@ -1,3 +1,4 @@
+import logo from "../logo.png.png"
 import "./index.css"
 
 export default function App() {
@@ -17,7 +18,7 @@ export default function App() {
       <header className="navbar">
         <div className="logo-wrap">
           <img
-            src="../logo.png.png"
+            src={logo}
             className="logo"
           />
 
