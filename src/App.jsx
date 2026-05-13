@@ -17,7 +17,7 @@ export default function App() {
       <header className="navbar">
         <div className="logo-wrap">
           <img
-            src="/logo.png"
+            src="/logo.png.png"
             className="logo"
           />
 
