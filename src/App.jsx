@@ -59,6 +59,7 @@ export default function App() {
           </button>
 
         </nav>
+
       </header>
 
       {/* HERO */}
@@ -332,17 +333,41 @@ export default function App() {
 
         <div className="contact-box">
 
-          <div>
-            📧 groweacz@gmail.com
-          </div>
+          <form
+            action="https://formspree.io/f/xnjwryel"
+            method="POST"
+            className="contact-form"
+          >
 
-          <div>
-            📞 +420 607 463 288
-          </div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Vaše jméno"
+              required
+            />
 
-          <button className="btn-primary">
-            Kontaktujte nás
-          </button>
+            <input
+              type="email"
+              name="email"
+              placeholder="Váš email"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Vaše zpráva"
+              rows="6"
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              className="btn-primary"
+            >
+              Odeslat zprávu
+            </button>
+
+          </form>
 
         </div>
 
