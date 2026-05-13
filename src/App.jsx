@@ -70,6 +70,11 @@ export default function App() {
 
         <div className="hero-left">
 
+          <div className="hero-status">
+            <span className="status-dot"></span>
+            Aktuálně přijímáme nové projekty
+          </div>
+
           <div className="hero-badge">
             AI • MARKETING • SOFTWARE • DOMAINS
           </div>
@@ -372,6 +377,31 @@ export default function App() {
         </div>
 
       </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+
+        <div className="footer-inner">
+
+          <div className="footer-brand">
+            <span className="footer-logo">GROWEA</span>
+            <span className="footer-tag">
+              AI Marketing & Software
+            </span>
+          </div>
+
+          <div className="footer-contact">
+            <span>groweacz@gmail.com</span>
+            <span>+420 607 463 288</span>
+          </div>
+
+          <div className="footer-copy">
+            © {new Date().getFullYear()} Growea. Všechna práva vyhrazena.
+          </div>
+
+        </div>
+
+      </footer>
 
     </div>
   )
