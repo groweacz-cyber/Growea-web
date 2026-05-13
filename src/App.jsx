@@ -27,7 +27,7 @@ export default function App() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
           <img
-            src="https://i.imgur.com/Q6XG6tA.png"
+  src="/ChatGPT Image 8. 5. 2026 23_30_01.png"
             alt="Growea"
             style={{
               width: "52px",
