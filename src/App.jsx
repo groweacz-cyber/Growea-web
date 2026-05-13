@@ -2,6 +2,7 @@ import logo from "../logo.png.png"
 import "./index.css"
 
 export default function App() {
+
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -10,12 +11,14 @@ export default function App() {
 
   return (
     <div className="app">
+
       {/* BACKGROUND */}
       <div className="bg-glow glow-1"></div>
       <div className="bg-glow glow-2"></div>
 
       {/* NAVBAR */}
       <header className="navbar">
+
         <div className="logo-wrap">
           <img
             src={logo}
@@ -23,7 +26,10 @@ export default function App() {
           />
 
           <div>
-            <div className="logo-title">GROWEA</div>
+            <div className="logo-title">
+              GROWEA
+            </div>
+
             <div className="logo-sub">
               SOCIAL MARKETING • AI SOFTWARE
             </div>
@@ -31,7 +37,8 @@ export default function App() {
         </div>
 
         <nav className="nav">
-          <button onClick={() => scrollTo("about")}>
+
+          <button onClick={() => scrollTo("hero")}>
             O nás
           </button>
 
@@ -39,7 +46,7 @@ export default function App() {
             Social marketing
           </button>
 
-          <button onClick={() => scrollTo("software")}>
+          <button onClick={() => scrollTo("tech")}>
             AI software
           </button>
 
@@ -50,12 +57,18 @@ export default function App() {
           <button onClick={() => scrollTo("contact")}>
             Kontakt
           </button>
+
         </nav>
       </header>
 
       {/* HERO */}
-      <section className="hero">
+      <section
+        className="hero"
+        id="hero"
+      >
+
         <div className="hero-left">
+
           <div className="hero-badge">
             AI • MARKETING • SOFTWARE • DOMAINS
           </div>
@@ -73,43 +86,58 @@ export default function App() {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn-primary">
+
+            <button
+              className="btn-primary"
+              onClick={() => scrollTo("services")}
+            >
               Naše služby
             </button>
 
-            <button className="btn-secondary">
+            <button
+              className="btn-secondary"
+              onClick={() => scrollTo("contact")}
+            >
               Kontaktujte nás
             </button>
+
           </div>
 
           <div className="hero-contact">
             <span>📧 groweacz@gmail.com</span>
             <span>📞 +420 607 463 288</span>
           </div>
+
         </div>
 
         <div className="hero-right">
+
           <div className="sphere hero-visual">
-            <img
-             src={logo}
-            />
+            <img src={logo} />
           </div>
+
         </div>
+
       </section>
 
       {/* SERVICES */}
       <section
-        className="services-section fade-in>"
         id="services"
+        className="services-section fade-in"
       >
+
         <div className="section-sub">
           NAŠE SLUŽBY
         </div>
 
-        <h2>Co pro vás můžeme udělat</h2>
+        <h2>
+          Co pro vás můžeme udělat
+        </h2>
 
         <div className="services-grid">
+
           <div className="card">
+
             <h3>
               Komplexní
               <br />
@@ -117,25 +145,20 @@ export default function App() {
             </h3>
 
             <ul>
-              <li>
-                Meta, Meta Ads, Google Ads
-              </li>
-              <li>
-                TikTok, IG, YouTube
-              </li>
-              <li>
-                E-booky, videa, grafika
-              </li>
-              <li>
-                AI agenti pro vyšší výkon
-              </li>
+              <li>Meta, Meta Ads, Google Ads</li>
+              <li>TikTok, IG, YouTube</li>
+              <li>E-booky, videa, grafika</li>
+              <li>AI agenti pro vyšší výkon</li>
             </ul>
+
           </div>
 
           <div className="card">
+
             <h3>
               Vývoj AI aplikací
-              <br />a SW
+              <br />
+              a SW
             </h3>
 
             <ul>
@@ -144,9 +167,11 @@ export default function App() {
               <li>Průmysl</li>
               <li>Obchod</li>
             </ul>
+
           </div>
 
           <div className="card">
+
             <h3>
               Prodej
               <br />
@@ -154,25 +179,24 @@ export default function App() {
             </h3>
 
             <ul>
-              <li>
-                Prémiové AI domény
-              </li>
-              <li>
-                Projekty 2027–2030
-              </li>
-              <li>
-                Brand potenciál
-              </li>
-              <li>
-                Omezené portfolio
-              </li>
+              <li>Prémiové AI domény</li>
+              <li>Projekty 2027–2030</li>
+              <li>Brand potenciál</li>
+              <li>Omezené portfolio</li>
             </ul>
+
           </div>
+
         </div>
+
       </section>
 
       {/* REFERENCES */}
-      <section className="references">
+      <section
+        className="references fade-in"
+        id="references"
+      >
+
         <div className="section-sub">
           REFERENCE
         </div>
@@ -183,7 +207,9 @@ export default function App() {
         </h2>
 
         <div className="ref-grid">
+
           <div className="ref-card">
+
             <h3>Kimchihero.cz</h3>
 
             <p>
@@ -194,9 +220,11 @@ export default function App() {
             <div className="ref-highlight">
               +50 % YTY
             </div>
+
           </div>
 
           <div className="ref-card">
+
             <h3>
               Autodoprava Vondrášek
             </h3>
@@ -205,25 +233,32 @@ export default function App() {
               Google reklamy, web,
               e-commerce.
             </p>
+
           </div>
 
           <div className="ref-card">
+
             <h3>czfkk.cz</h3>
 
             <p>
               Weby, sociální skupiny,
               digitální obsah.
             </p>
+
           </div>
+
         </div>
+
       </section>
 
       {/* DOMAINS */}
       <section
-        className="domains"
+        className="domains fade-in"
         id="domains"
       >
+
         <div className="domains-left">
+
           <div className="section-sub">
             AI DOMÉNY 2027–2030
           </div>
@@ -238,6 +273,7 @@ export default function App() {
             aktiva pro startupy,
             projekty a značky.
           </p>
+
         </div>
 
         <div className="domain-tags">
@@ -246,17 +282,22 @@ export default function App() {
           <span>smartmind.cz</span>
           <span>adaptiveai.app</span>
         </div>
+
       </section>
 
       {/* TECHNOLOGIES */}
-      <section className="tech">
+      <section
+        className="tech fade-in"
+        id="tech"
+      >
+
         <div className="section-sub">
           TECHNOLOGIE
         </div>
 
         <h2>
-          Technologie, se kterými
-          pracujeme
+          Technologie,
+          se kterými pracujeme
         </h2>
 
         <div className="tech-grid">
@@ -266,14 +307,17 @@ export default function App() {
           <span>Meta</span>
           <span>Vercel</span>
         </div>
+
       </section>
 
       {/* CONTACT */}
       <section
-        className="contact"
+        className="contact fade-in"
         id="contact"
       >
+
         <div>
+
           <h2>
             Připraveni posunout
             váš projekt dál?
@@ -283,9 +327,11 @@ export default function App() {
             Ozvěte se nám a společně
             najdeme nejlepší řešení.
           </p>
+
         </div>
 
         <div className="contact-box">
+
           <div>
             📧 groweacz@gmail.com
           </div>
@@ -297,8 +343,11 @@ export default function App() {
           <button className="btn-primary">
             Kontaktujte nás
           </button>
+
         </div>
+
       </section>
+
     </div>
   )
 }
