@@ -411,3 +411,85 @@ cursor:pointer;
   border:1px solid #6b7cff55;
   background:#151525;
 }
+/* PREMIUM PAGE GRAIN */
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:
+    radial-gradient(rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size:3px 3px;
+  opacity:.15;
+  pointer-events:none;
+  z-index:999;
+}
+
+/* HERO LIGHT EFFECT */
+
+.hero::after{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(
+    circle,
+    rgba(111,92,255,.18),
+    transparent 70%
+  );
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+  filter:blur(40px);
+  z-index:-1;
+}
+
+/* NAVBAR PREMIUM HOVER */
+
+.nav button{
+  transition:.3s ease;
+  position:relative;
+}
+
+.nav button::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:0%;
+  height:2px;
+  background:linear-gradient(to right,#64d8ff,#8b5cf6);
+  transition:.3s ease;
+}
+
+.nav button:hover{
+  color:white;
+}
+
+.nav button:hover::after{
+  width:100%;
+}
+
+/* SPHERE GLOW PULSE */
+
+@keyframes pulseGlow{
+  0%{
+    box-shadow:0 0 120px #5f5fff44;
+  }
+
+  50%{
+    box-shadow:
+      0 0 180px #7c5cff88,
+      0 0 260px #00aaff33;
+  }
+
+  100%{
+    box-shadow:0 0 120px #5f5fff44;
+  }
+}
+
+.sphere{
+  animation:
+    floatSphere 6s ease-in-out infinite,
+    pulseGlow 4s ease-in-out infinite;
+}
