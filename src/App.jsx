@@ -1,3 +1,5 @@
+import "./index.css"
+
 export default function App() {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
@@ -6,517 +8,296 @@ export default function App() {
   }
 
   return (
-    <div
-      style={{
-        background:
-          "radial-gradient(circle at top, rgba(80,120,255,0.25), #040404 45%)",
-        color: "white",
-        fontFamily: "Arial, sans-serif",
-        overflowX: "hidden",
-      }}
-    >
-      {/* BACKGROUND GLOW */}
-      <div
-        style={{
-          position: "fixed",
-          width: "900px",
-          height: "900px",
-          background:
-            "radial-gradient(circle, rgba(120,80,255,0.18), transparent 70%)",
-          top: "-300px",
-          right: "-250px",
-          filter: "blur(80px)",
-          zIndex: 0,
-        }}
-      />
+    <div className="app">
+      {/* BACKGROUND */}
+      <div className="bg-glow glow-1"></div>
+      <div className="bg-glow glow-2"></div>
 
       {/* NAVBAR */}
-      <div
-        style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 50,
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "24px 60px",
-          background: "rgba(5,5,5,0.72)",
-          backdropFilter: "blur(16px)",
-          borderBottom: "1px solid rgba(255,255,255,0.06)",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "18px",
-          }}
-        >
+      <header className="navbar">
+        <div className="logo-wrap">
           <img
             src="/ChatGPT Image 8. 5. 2026 23_30_01.png"
-            alt="Growea"
-            style={{
-              width: "72px",
-              height: "72px",
-              objectFit: "contain",
-            }}
+            className="logo"
           />
 
           <div>
-            <div
-              style={{
-                fontSize: "38px",
-                fontWeight: "bold",
-                letterSpacing: "4px",
-              }}
-            >
-              GROWEA
-            </div>
-
-            <div
-              style={{
-                color: "#777",
-                marginTop: "4px",
-              }}
-            >
-              growea.eu
+            <div className="logo-title">GROWEA</div>
+            <div className="logo-sub">
+              SOCIAL MARKETING • AI SOFTWARE
             </div>
           </div>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "38px",
-            color: "#aaa",
-            fontSize: "16px",
-            cursor: "pointer",
-          }}
-        >
-          <span onClick={() => scrollTo("about")}>O nás</span>
-          <span onClick={() => scrollTo("services")}>
-            Social Marketing
-          </span>
-          <span onClick={() => scrollTo("software")}>
-            AI Software
-          </span>
-          <span onClick={() => scrollTo("domains")}>
-            AI Domény
-          </span>
-          <span onClick={() => scrollTo("contact")}>
+        <nav className="nav">
+          <button onClick={() => scrollTo("about")}>
+            O nás
+          </button>
+
+          <button onClick={() => scrollTo("services")}>
+            Social marketing
+          </button>
+
+          <button onClick={() => scrollTo("software")}>
+            AI software
+          </button>
+
+          <button onClick={() => scrollTo("domains")}>
+            AI domény
+          </button>
+
+          <button onClick={() => scrollTo("contact")}>
             Kontakt
-          </span>
-        </div>
-      </div>
+          </button>
+        </nav>
+      </header>
 
       {/* HERO */}
-      <section
-        id="hero"
-        style={{
-          minHeight: "92vh",
-          display: "flex",
-          alignItems: "center",
-          padding: "80px 60px",
-          position: "relative",
-          zIndex: 2,
-        }}
-      >
-        <div style={{ maxWidth: "1100px" }}>
-          <div
-            style={{
-              display: "inline-block",
-              padding: "12px 22px",
-              borderRadius: "999px",
-              border: "1px solid rgba(120,120,255,0.25)",
-              background: "rgba(120,120,255,0.08)",
-              color: "#9dc1ff",
-              marginBottom: "36px",
-              fontSize: "15px",
-            }}
-          >
-            AI • Marketing • Software • Digital Assets
+      <section className="hero">
+        <div className="hero-left">
+          <div className="hero-badge">
+            AI • MARKETING • SOFTWARE • DOMAINS
           </div>
 
-          <h1
-            style={{
-              fontSize: "110px",
-              lineHeight: "0.92",
-              marginBottom: "36px",
-              fontWeight: 900,
-              letterSpacing: "-4px",
-            }}
-          >
-            Building
+          <h1>
+            Budujeme růst
             <br />
-            <span
-              style={{
-                background:
-                  "linear-gradient(to right,#66d9ff,#8b5cf6,#66d9ff)",
-                WebkitBackgroundClip: "text",
-                color: "transparent",
-              }}
-            >
-              AI-powered
-            </span>
-            <br />
-            digital growth.
+            pomocí <span>AI.</span>
           </h1>
 
-          <p
-            style={{
-              maxWidth: "760px",
-              color: "#999",
-              fontSize: "25px",
-              lineHeight: "1.7",
-              marginBottom: "50px",
-            }}
-          >
-            Moderní AI studio zaměřené na komplexní social marketing,
-            vývoj AI aplikací, software systémů a prémiových AI domén.
+          <p>
+            Spojujeme komplexní marketing,
+            moderní software a umělou inteligenci
+            pro měřitelné výsledky a dlouhodobý růst.
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              gap: "22px",
-              flexWrap: "wrap",
-            }}
-          >
-            <button
-              onClick={() => scrollTo("contact")}
-              style={{
-                padding: "18px 36px",
-                borderRadius: "18px",
-                border: "none",
-                background:
-                  "linear-gradient(to right,#4fd1ff,#6d5cff)",
-                color: "white",
-                fontSize: "18px",
-                fontWeight: "bold",
-                cursor: "pointer",
-                boxShadow:
-                  "0 0 40px rgba(90,120,255,0.35)",
-              }}
-            >
+          <div className="hero-buttons">
+            <button className="btn-primary">
+              Naše služby
+            </button>
+
+            <button className="btn-secondary">
               Kontaktujte nás
             </button>
+          </div>
 
-            <button
-              onClick={() => scrollTo("domains")}
-              style={{
-                padding: "18px 36px",
-                borderRadius: "18px",
-                border:
-                  "1px solid rgba(255,255,255,0.12)",
-                background: "rgba(255,255,255,0.03)",
-                color: "white",
-                fontSize: "18px",
-                cursor: "pointer",
-              }}
-            >
-              AI Domény
-            </button>
+          <div className="hero-contact">
+            <span>📧 groweacz@gmail.com</span>
+            <span>📞 +420 607 463 288</span>
           </div>
         </div>
-      </section>
 
-      {/* ABOUT */}
-      <section
-        id="about"
-        style={{
-          padding: "120px 60px",
-          maxWidth: "1400px",
-          margin: "0 auto",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "62px",
-            marginBottom: "40px",
-          }}
-        >
-          O nás
-        </h2>
-
-        <p
-          style={{
-            color: "#999",
-            lineHeight: "2",
-            fontSize: "20px",
-            maxWidth: "1000px",
-          }}
-        >
-          Growea propojuje AI technologie, marketing,
-          software a digitální infrastrukturu do jednoho
-          moderního ekosystému. Naše AI agenti pomáhají
-          zvyšovat výkon reklam, automatizovat procesy
-          a vytvářet efektivní digitální systémy pro firmy
-          budoucnosti.
-        </p>
+        <div className="hero-right">
+          <div className="sphere">
+            <img
+              src="/ChatGPT Image 8. 5. 2026 23_30_01.png"
+            />
+          </div>
+        </div>
       </section>
 
       {/* SERVICES */}
       <section
+        className="services-section"
         id="services"
-        style={{
-          padding: "40px 60px 140px",
-          maxWidth: "1450px",
-          margin: "0 auto",
-        }}
       >
-        <h2
-          style={{
-            fontSize: "62px",
-            marginBottom: "70px",
-          }}
-        >
-          Služby
-        </h2>
+        <div className="section-sub">
+          NAŠE SLUŽBY
+        </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(320px,1fr))",
-            gap: "30px",
-          }}
-        >
-          {[
-            {
-              title: "Komplexní Social Marketing",
-              text:
-                "Meta Ads, Google Ads, TikTok, IG, YouTube, FB skupiny, e-booky, videa, grafika a AI marketingové systémy.",
-            },
-            {
-              title: "Vývoj AI aplikací a SW",
-              text:
-                "Moderní AI software pro zdravotnictví, logistiku, průmysl, obchod a další odvětví.",
-            },
-            {
-              title: "AI Domény",
-              text:
-                "Prémiové AI domény a digitální aktiva pro roky 2027–2030.",
-            },
-          ].map((card, i) => (
-            <div
-              key={i}
-              style={{
-                padding: "42px",
-                borderRadius: "34px",
-                background:
-                  "rgba(255,255,255,0.04)",
-                border:
-                  "1px solid rgba(255,255,255,0.08)",
-                backdropFilter: "blur(18px)",
-                boxShadow:
-                  "0 0 60px rgba(0,0,0,0.35)",
-              }}
-            >
-              <div
-                style={{
-                  color: "#7dd3fc",
-                  marginBottom: "24px",
-                  fontWeight: "bold",
-                }}
-              >
-                0{i + 1}
-              </div>
+        <h2>Co pro vás můžeme udělat</h2>
 
-              <h3
-                style={{
-                  fontSize: "34px",
-                  marginBottom: "24px",
-                }}
-              >
-                {card.title}
-              </h3>
+        <div className="services-grid">
+          <div className="card">
+            <h3>
+              Komplexní
+              <br />
+              social marketing
+            </h3>
 
-              <p
-                style={{
-                  color: "#999",
-                  lineHeight: "1.9",
-                  fontSize: "17px",
-                }}
-              >
-                {card.text}
-              </p>
-            </div>
-          ))}
+            <ul>
+              <li>
+                Meta, Meta Ads, Google Ads
+              </li>
+              <li>
+                TikTok, IG, YouTube
+              </li>
+              <li>
+                E-booky, videa, grafika
+              </li>
+              <li>
+                AI agenti pro vyšší výkon
+              </li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3>
+              Vývoj AI aplikací
+              <br />a SW
+            </h3>
+
+            <ul>
+              <li>Zdravotnictví</li>
+              <li>Logistika</li>
+              <li>Průmysl</li>
+              <li>Obchod</li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3>
+              Prodej
+              <br />
+              AI domén
+            </h3>
+
+            <ul>
+              <li>
+                Prémiové AI domény
+              </li>
+              <li>
+                Projekty 2027–2030
+              </li>
+              <li>
+                Brand potenciál
+              </li>
+              <li>
+                Omezené portfolio
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* REFERENCES */}
-      <section
-        id="software"
-        style={{
-          padding: "0 60px 140px",
-          maxWidth: "1450px",
-          margin: "0 auto",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "62px",
-            marginBottom: "70px",
-          }}
-        >
-          Reference
+      <section className="references">
+        <div className="section-sub">
+          REFERENCE
+        </div>
+
+        <h2>
+          Důvěřují nám projekty,
+          které rostou
         </h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(320px,1fr))",
-            gap: "30px",
-          }}
-        >
-          {[
-            {
-              name: "Kimchihero.cz",
-              text:
-                "Komplexní řízení e-commerce a marketingu. Meziroční růst +50 % YTY.",
-            },
-            {
-              name: "Autodoprava Vondrášek",
-              text:
-                "Google reklamy, tvorba interaktivního webu a e-commerce systémů.",
-            },
-            {
-              name: "czfkk.cz",
-              text:
-                "Weby, sociální skupiny, digitální obsah a online infrastruktura.",
-            },
-          ].map((ref, i) => (
-            <div
-              key={i}
-              style={{
-                padding: "38px",
-                borderRadius: "32px",
-                background: "#0a0a0a",
-                border:
-                  "1px solid rgba(255,255,255,0.08)",
-              }}
-            >
-              <h3
-                style={{
-                  fontSize: "30px",
-                  marginBottom: "24px",
-                }}
-              >
-                {ref.name}
-              </h3>
+        <div className="ref-grid">
+          <div className="ref-card">
+            <h3>Kimchihero.cz</h3>
 
-              <p
-                style={{
-                  color: "#999",
-                  lineHeight: "1.9",
-                  fontSize: "17px",
-                }}
-              >
-                {ref.text}
-              </p>
+            <p>
+              Komplexní řízení e-commerce
+              a marketingu.
+            </p>
+
+            <div className="ref-highlight">
+              +50 % YTY
             </div>
-          ))}
+          </div>
+
+          <div className="ref-card">
+            <h3>
+              Autodoprava Vondrášek
+            </h3>
+
+            <p>
+              Google reklamy, web,
+              e-commerce.
+            </p>
+          </div>
+
+          <div className="ref-card">
+            <h3>czfkk.cz</h3>
+
+            <p>
+              Weby, sociální skupiny,
+              digitální obsah.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* DOMAINS */}
       <section
+        className="domains"
         id="domains"
-        style={{
-          padding: "0 60px 140px",
-          maxWidth: "1450px",
-          margin: "0 auto",
-        }}
       >
-        <div
-          style={{
-            padding: "70px",
-            borderRadius: "40px",
-            background:
-              "linear-gradient(135deg, rgba(70,90,255,0.18), rgba(130,80,255,0.12))",
-            border:
-              "1px solid rgba(255,255,255,0.08)",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "62px",
-              marginBottom: "30px",
-            }}
-          >
-            AI Domény
+        <div className="domains-left">
+          <div className="section-sub">
+            AI DOMÉNY 2027–2030
+          </div>
+
+          <h2>
+            Prémiové AI domény
+            budoucnosti
           </h2>
 
-          <p
-            style={{
-              color: "#aaa",
-              maxWidth: "850px",
-              lineHeight: "2",
-              fontSize: "20px",
-            }}
-          >
-            Prémiové AI domény představují digitální aktiva
-            budoucnosti. Growea se zaměřuje na strategické
-            AI názvy a domény s potenciálem pro roky 2027–2030.
+          <p>
+            Exkluzivní AI digitální
+            aktiva pro startupy,
+            projekty a značky.
           </p>
+        </div>
+
+        <div className="domain-tags">
+          <span>neuroflow.ai</span>
+          <span>futurelogic.ai</span>
+          <span>smartmind.cz</span>
+          <span>adaptiveai.app</span>
+        </div>
+      </section>
+
+      {/* TECHNOLOGIES */}
+      <section className="tech">
+        <div className="section-sub">
+          TECHNOLOGIE
+        </div>
+
+        <h2>
+          Technologie, se kterými
+          pracujeme
+        </h2>
+
+        <div className="tech-grid">
+          <span>OpenAI</span>
+          <span>Anthropic</span>
+          <span>Google</span>
+          <span>Meta</span>
+          <span>Vercel</span>
         </div>
       </section>
 
       {/* CONTACT */}
       <section
+        className="contact"
         id="contact"
-        style={{
-          padding: "0 60px 140px",
-          maxWidth: "1450px",
-          margin: "0 auto",
-        }}
       >
-        <div
-          style={{
-            padding: "70px",
-            borderRadius: "40px",
-            background: "#090909",
-            border:
-              "1px solid rgba(255,255,255,0.08)",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "62px",
-              marginBottom: "40px",
-            }}
-          >
-            Kontakt
+        <div>
+          <h2>
+            Připraveni posunout
+            váš projekt dál?
           </h2>
 
-          <div
-            style={{
-              color: "#aaa",
-              fontSize: "22px",
-              lineHeight: "2.2",
-            }}
-          >
+          <p>
+            Ozvěte se nám a společně
+            najdeme nejlepší řešení.
+          </p>
+        </div>
+
+        <div className="contact-box">
+          <div>
             📧 groweacz@gmail.com
-            <br />
+          </div>
+
+          <div>
             📞 +420 607 463 288
           </div>
+
+          <button className="btn-primary">
+            Kontaktujte nás
+          </button>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer
-        style={{
-          borderTop:
-            "1px solid rgba(255,255,255,0.08)",
-          padding: "50px 60px",
-          color: "#666",
-          textAlign: "center",
-        }}
-      >
-        © 2026 GROWEA — AI Marketing • Software • Growth
-      </footer>
     </div>
   )
 }
