@@ -91,7 +91,7 @@ export default function App() {
         <div className="hero-right">
           <div className="sphere">
             <img
-              src="/ChatGPT Image 8. 5. 2026 23_30_01.png"
+             src={logo}
             />
           </div>
         </div>
