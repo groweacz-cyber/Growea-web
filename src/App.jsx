@@ -17,7 +17,7 @@ export default function App() {
       <header className="navbar">
         <div className="logo-wrap">
           <img
-            src="/ChatGPT Image 8. 5. 2026 23_30_01.png"
+            src="/logo.png"
             className="logo"
           />
 
