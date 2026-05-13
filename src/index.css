@@ -905,3 +905,138 @@ body::before{
 
   filter:blur(20px);
 }
+/* ULTRA PREMIUM MICRO INTERACTIONS */
+
+/* CARD INNER SHADOW */
+
+.card,
+.ref-card,
+.contact-box{
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 10px 40px rgba(0,0,0,.45);
+}
+
+/* HERO TITLE GRADIENT MOTION */
+
+.hero h1 span{
+  background-size:200% 200%;
+
+  animation:
+    gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+
+  0%{
+    background-position:0% 50%;
+  }
+
+  50%{
+    background-position:100% 50%;
+  }
+
+  100%{
+    background-position:0% 50%;
+  }
+}
+
+/* NAVBAR PREMIUM TRANSPARENCY */
+
+.navbar{
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(10,10,18,.82),
+      rgba(5,5,5,.68)
+    );
+}
+
+/* HERO BADGE PREMIUM */
+
+.hero-badge{
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 0 25px rgba(95,140,255,.12);
+}
+
+/* DOMAIN TAGS PREMIUM GLOW */
+
+.domain-tags span{
+  position:relative;
+  overflow:hidden;
+}
+
+.domain-tags span::before{
+  content:"";
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,.08),
+      transparent
+    );
+
+  transform:translateX(-120%);
+  transition:.8s ease;
+}
+
+.domain-tags span:hover::before{
+  transform:translateX(120%);
+}
+
+/* TECHNOLOGY FLOAT */
+
+.tech-grid span{
+  animation:
+    techFloat 5s ease-in-out infinite;
+}
+
+.tech-grid span:nth-child(2){
+  animation-delay:.5s;
+}
+
+.tech-grid span:nth-child(3){
+  animation-delay:1s;
+}
+
+.tech-grid span:nth-child(4){
+  animation-delay:1.5s;
+}
+
+.tech-grid span:nth-child(5){
+  animation-delay:2s;
+}
+
+@keyframes techFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-6px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+/* CONTACT BUTTON EXTRA GLOW */
+
+.contact-box .btn-primary{
+  width:fit-content;
+}
+
+/* PREMIUM PAGE SMOOTHNESS */
+
+html{
+  scroll-behavior:smooth;
+}
