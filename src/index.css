@@ -790,3 +790,118 @@ body::before{
   box-shadow:
     0 0 18px #8b5cf6aa;
 }
+/* CINEMATIC PAGE VIGNETTE */
+
+.app::before{
+  content:"";
+  position:fixed;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      transparent 45%,
+      rgba(0,0,0,.38) 100%
+    );
+
+  pointer-events:none;
+  z-index:998;
+}
+
+/* HERO TITLE ANIMATION */
+
+@keyframes heroTextReveal{
+
+  0%{
+    opacity:0;
+    transform:
+      translateY(40px)
+      scale(.98);
+  }
+
+  100%{
+    opacity:1;
+    transform:
+      translateY(0px)
+      scale(1);
+  }
+}
+
+.hero h1{
+  animation:
+    heroTextReveal 1.2s ease;
+}
+
+/* HERO PARAGRAPH DELAY */
+
+.hero p{
+  opacity:0;
+  animation:
+    heroTextReveal 1.2s ease forwards;
+
+  animation-delay:.3s;
+}
+
+/* BUTTON DELAY */
+
+.hero-buttons{
+  opacity:0;
+
+  animation:
+    heroTextReveal 1.2s ease forwards;
+
+  animation-delay:.5s;
+}
+
+/* NAVBAR PREMIUM SHADOW */
+
+.navbar{
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.35);
+}
+
+/* SECTION HOVER LIGHT */
+
+.services-section:hover::after,
+.references:hover::after,
+.domains:hover::after,
+.tech:hover::after,
+.contact:hover::after{
+  opacity:1;
+}
+
+.services-section::after,
+.references::after,
+.domains::after,
+.tech::after,
+.contact::after{
+  opacity:.45;
+  transition:opacity .5s ease;
+}
+
+/* PREMIUM DOMAIN TAGS */
+
+.domain-tags span{
+  backdrop-filter:blur(12px);
+}
+
+/* HERO SPHERE INNER LIGHT */
+
+.sphere::before{
+  content:"";
+  position:absolute;
+
+  width:70%;
+  height:70%;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.08),
+      transparent 70%
+    );
+
+  filter:blur(20px);
+}
