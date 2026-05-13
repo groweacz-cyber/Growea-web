@@ -99,7 +99,7 @@ export default function App() {
 
       {/* SERVICES */}
       <section
-        className="services-section"
+        className="services-section fade-in>"
         id="services"
       >
         <div className="section-sub">
