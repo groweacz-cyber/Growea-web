@@ -89,7 +89,7 @@ export default function App() {
         </div>
 
         <div className="hero-right">
-          <div className="sphere">
+          <div className="sphere hero-visual">
             <img
              src={logo}
             />
