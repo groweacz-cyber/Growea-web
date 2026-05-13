@@ -493,3 +493,91 @@ body::before{
     floatSphere 6s ease-in-out infinite,
     pulseGlow 4s ease-in-out infinite;
 }
+/* GLASSMORPHISM EFFECTS */
+
+.card,
+.ref-card,
+.contact-box{
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  background:rgba(12,12,18,.72);
+}
+
+/* PREMIUM BORDERS */
+
+.card::before,
+.ref-card::before,
+.contact-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:28px;
+  padding:1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.12),
+      rgba(255,255,255,.02)
+    );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+
+  pointer-events:none;
+}
+
+/* CARD DEPTH */
+
+.card,
+.ref-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card::after,
+.ref-card::after{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  background:radial-gradient(
+    circle,
+    rgba(111,92,255,.18),
+    transparent 70%
+  );
+  top:-80px;
+  right:-80px;
+  opacity:0;
+  transition:.5s ease;
+}
+
+.card:hover::after,
+.ref-card:hover::after{
+  opacity:1;
+}
+
+/* PREMIUM SCROLLBAR */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+  background:
+    linear-gradient(
+      to bottom,
+      #5f8cff,
+      #8b5cf6
+    );
+
+  border-radius:999px;
+}
