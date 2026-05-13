@@ -1172,3 +1172,119 @@ html{
     0 0 30px rgba(95,140,255,.35),
     0 0 80px rgba(111,92,255,.18);
 }
+/* MOBILE PREMIUM OPTIMIZATION */
+
+@media(max-width:768px){
+
+.navbar{
+  padding:18px 20px;
+}
+
+.logo{
+  width:52px;
+  height:52px;
+}
+
+.logo-title{
+  font-size:26px;
+}
+
+.logo-sub{
+  font-size:10px;
+}
+
+.hero{
+  padding:40px 20px 80px;
+  min-height:auto;
+}
+
+.hero h1{
+  font-size:54px;
+  line-height:1;
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.7;
+}
+
+.hero-buttons{
+  flex-direction:column;
+  width:100%;
+}
+
+.btn-primary,
+.btn-secondary{
+  width:100%;
+}
+
+.hero-contact{
+  flex-direction:column;
+  gap:14px;
+  font-size:14px;
+}
+
+.sphere{
+  width:320px;
+  height:320px;
+  margin-top:40px;
+}
+
+.sphere img{
+  width:180px;
+}
+
+.services-section,
+.references,
+.domains,
+.tech,
+.contact{
+  padding:80px 20px;
+}
+
+.services-section h2,
+.references h2,
+.domains h2,
+.tech h2,
+.contact h2{
+  font-size:40px;
+  line-height:1.1;
+}
+
+.card,
+.ref-card,
+.contact-box{
+  padding:28px;
+}
+
+.card h3,
+.ref-card h3{
+  font-size:26px;
+}
+
+.tech-grid{
+  gap:20px;
+  font-size:22px;
+}
+
+.domain-tags{
+  gap:12px;
+}
+
+.domain-tags span{
+  padding:12px 18px;
+  font-size:14px;
+}
+
+.contact{
+  gap:30px;
+}
+
+.hero-badge{
+  font-size:12px;
+}
+
+.section-sub{
+  font-size:11px;
+}
+}
