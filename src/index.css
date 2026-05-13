@@ -1040,3 +1040,135 @@ body::before{
 html{
   scroll-behavior:smooth;
 }
+/* ULTRA PREMIUM HERO DEPTH */
+
+.hero-left{
+  position:relative;
+  z-index:2;
+}
+
+.hero-left::before{
+  content:"";
+  position:absolute;
+
+  width:420px;
+  height:420px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0,170,255,.10),
+      transparent 70%
+    );
+
+  top:-120px;
+  left:-120px;
+
+  filter:blur(40px);
+
+  z-index:-1;
+}
+
+/* PREMIUM LOGO GLOW */
+
+.logo{
+  filter:
+    drop-shadow(0 0 12px rgba(95,140,255,.45));
+}
+
+/* HERO CONTACT STYLE */
+
+.hero-contact span{
+  position:relative;
+  transition:.3s ease;
+}
+
+.hero-contact span:hover{
+  color:white;
+
+  text-shadow:
+    0 0 18px #8b5cf688;
+}
+
+/* PREMIUM CONTACT CARD */
+
+.contact-box{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(18,18,28,.92),
+      rgba(8,8,14,.82)
+    );
+}
+
+/* SERVICES GRID DEPTH */
+
+.services-grid{
+  perspective:1200px;
+}
+
+.card:hover{
+  transform:
+    translateY(-10px)
+    rotateX(4deg)
+    rotateY(-2deg);
+}
+
+/* REFERENCE CARD PREMIUM */
+
+.ref-card{
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border .35s ease;
+}
+
+/* SECTION SUBTITLE GLOW */
+
+.section-sub{
+  text-shadow:
+    0 0 12px rgba(95,140,255,.22);
+}
+
+/* PREMIUM DOMAIN SECTION */
+
+.domains{
+  position:relative;
+  overflow:hidden;
+}
+
+.domains::before{
+  content:"";
+  position:absolute;
+
+  width:700px;
+  height:700px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(111,92,255,.08),
+      transparent 70%
+    );
+
+  top:-300px;
+  right:-300px;
+
+  filter:blur(60px);
+
+  z-index:-1;
+}
+
+/* TECH GRID PREMIUM */
+
+.tech-grid{
+  opacity:.9;
+}
+
+/* HERO BUTTON PREMIUM SHADOW */
+
+.btn-primary{
+  box-shadow:
+    0 0 30px rgba(95,140,255,.35),
+    0 0 80px rgba(111,92,255,.18);
+}
