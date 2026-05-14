@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
-export default function ChatWidget() {
-  const [open, setOpen] = useState(false)
+export default function ChatWidget({ open, setOpen }) {
   const [messages, setMessages] = useState([
     { role: 'assistant', content: 'Ahoj! Jsem AI asistent Growea. S čím vám můžu poradit? 👋' },
   ])
@@ -15,13 +14,11 @@ export default function ChatWidget() {
 
   const sendMessage = async () => {
     if (!input.trim() || loading) return
-
     const userMsg = { role: 'user', content: input.trim() }
     const newMessages = [...messages, userMsg]
     setMessages(newMessages)
     setInput('')
     setLoading(true)
-
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
@@ -65,7 +62,6 @@ export default function ChatWidget() {
       >
         {open ? '✕' : '💬'}
       </button>
-
       {open && (
         <div className="chat-window">
           <div className="chat-header">
@@ -81,7 +77,6 @@ export default function ChatWidget() {
             </div>
             <button className="chat-close" onClick={() => setOpen(false)}>✕</button>
           </div>
-
           <div className="chat-messages">
             {messages.map((m, i) => (
               <div key={i} className={`chat-msg chat-msg-${m.role}`}>
@@ -95,7 +90,6 @@ export default function ChatWidget() {
             )}
             <div ref={endRef} />
           </div>
-
           <div className="chat-input-wrap">
             <input
               type="text"
