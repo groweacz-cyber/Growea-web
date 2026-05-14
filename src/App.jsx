@@ -8,6 +8,7 @@ import Reveal from "./Reveal"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
+    const [chatOpen, setChatOpen] = useState(false)
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -419,6 +420,7 @@ export default function App() {
       </footer>
 
       <ChatWidget />
+      <WelcomeBot onOpenChat={() => setChatOpen(true)} />
       <CookieConsent onConsentChange={setAnalyticsOn} />
       {analyticsOn && <Analytics />}
 
