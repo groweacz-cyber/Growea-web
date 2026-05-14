@@ -132,9 +132,10 @@ export default function App() {
       </section>
 
       {/* SERVICES */}
+      <Reveal>
       <section
         id="services"
-        className="services-section fade-in"
+        className="services-section"
       >
 
         <div className="section-sub">
@@ -201,10 +202,12 @@ export default function App() {
         </div>
 
       </section>
+      </Reveal>
 
       {/* REFERENCES */}
+      <Reveal>
       <section
-        className="references fade-in"
+        className="references"
         id="references"
       >
 
@@ -261,10 +264,12 @@ export default function App() {
         </div>
 
       </section>
+      </Reveal>
 
       {/* DOMAINS */}
+      <Reveal>
       <section
-        className="domains fade-in"
+        className="domains"
         id="domains"
       >
 
@@ -295,10 +300,12 @@ export default function App() {
         </div>
 
       </section>
+      </Reveal>
 
       {/* TECHNOLOGIES */}
+      <Reveal>
       <section
-        className="tech fade-in"
+        className="tech"
         id="tech"
       >
 
@@ -320,10 +327,12 @@ export default function App() {
         </div>
 
       </section>
+      </Reveal>
 
       {/* CONTACT */}
+      <Reveal>
       <section
-        className="contact fade-in"
+        className="contact"
         id="contact"
       >
 
@@ -382,6 +391,7 @@ export default function App() {
         </div>
 
       </section>
+      </Reveal>
 
       {/* FOOTER */}
       <footer className="footer">
@@ -407,9 +417,11 @@ export default function App() {
         </div>
 
       </footer>
-<ChatWidget />
-<CookieConsent onConsentChange={setAnalyticsOn} />
-{analyticsOn && <Analytics />}
+
+      <ChatWidget />
+      <CookieConsent onConsentChange={setAnalyticsOn} />
+      {analyticsOn && <Analytics />}
+
     </div>
   )
 }
