@@ -41,6 +41,7 @@ export default function App() {
           <img
             src={logo}
             className="logo"
+            alt="Growea logo"
           />
 
           <div>
@@ -137,7 +138,7 @@ export default function App() {
         <div className="hero-right">
 
           <div className="sphere hero-visual">
-            <img src={logo} />
+          <img src={logo} alt="Growea — AI marketing a software" />
           </div>
 
         </div>
