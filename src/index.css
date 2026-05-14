@@ -1318,29 +1318,45 @@ body::before {
 /* ===== LANGUAGE SWITCHER ===== */
 .lang-switcher {
   display: flex;
-  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 4px;
 }
 
-/* Select box Google Translate */
-.lang-switcher .goog-te-combo {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #ddd;
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: #999;
   font-family: 'Sora', sans-serif;
-  font-size: 13px;
-  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 6px 12px;
   border-radius: 999px;
   cursor: pointer;
-  outline: none;
-  transition: border-color 0.3s ease, background 0.3s ease;
+  transition: color 0.25s ease, background 0.25s ease;
 }
 
-.lang-switcher .goog-te-combo:hover {
-  border-color: rgba(107, 124, 255, 0.5);
-  background: rgba(255, 255, 255, 0.08);
+.lang-btn:hover {
+  color: #fff;
 }
 
-/* Skryj horní lištu, kterou Google vkládá */
+.lang-btn-active {
+  background: linear-gradient(135deg, #5f8cff, #8b5cf6);
+  color: #fff;
+}
+
+.lang-flag {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Skryj vše, co Google Translate vkládá do stránky */
 .goog-te-banner-frame,
 .skiptranslate {
   display: none !important;
@@ -1350,17 +1366,6 @@ body {
   top: 0 !important;
 }
 
-/* Skryj "Powered by Google" a ikonu */
-.goog-te-gadget {
-  font-size: 0 !important;
-}
-
-.goog-te-gadget .goog-te-combo {
-  font-size: 13px !important;
-  margin: 0 !important;
-}
-
-/* Skryj tooltip/hover rámeček Google Translate */
 .goog-tooltip,
 .goog-tooltip:hover {
   display: none !important;
@@ -1374,8 +1379,12 @@ body {
 @media (max-width: 1000px) {
   .lang-switcher {
     position: fixed;
-    top: 16px;
-    right: 16px;
+    top: 14px;
+    right: 14px;
     z-index: 30;
+  }
+
+  .lang-label {
+    display: none;
   }
 }
