@@ -121,10 +121,12 @@ export default function WelcomeBot({ onOpenChat }) {
         alt="Growea AI asistentka"
       />
 
-      <div className="welcome-bot-bubble">
-        <div className="welcome-bot-text" key={index}>
-          {greetings[index].text}
-        </div>
+<div className="welcome-bot-bubble">
+        {!showCta && (
+          <div className="welcome-bot-text" key={index}>
+            {greetings[index].text}
+          </div>
+        )}
 
         {showCta && (
           <div className="welcome-bot-actions">
