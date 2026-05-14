@@ -8,6 +8,7 @@ import Reveal from "./Reveal"
 import WelcomeBot from "./WelcomeBot"
 import LanguageSwitcher from "./LanguageSwitcher"
 import CountUp from "./CountUp"
+import CustomCursor from "./CustomCursor"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
