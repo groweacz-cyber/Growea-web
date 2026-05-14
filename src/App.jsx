@@ -6,6 +6,7 @@ import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
 import Reveal from "./Reveal"
 import WelcomeBot from "./WelcomeBot"
+import LanguageSwitcher from "./LanguageSwitcher"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
@@ -66,7 +67,7 @@ export default function App() {
           </button>
 
         </nav>
-
+ <LanguageSwitcher />
       </header>
 
       {/* HERO */}
