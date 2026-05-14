@@ -1443,3 +1443,91 @@ body {
     display: none;
   }
 }
+/* ===== AURORA MESH BACKGROUND ===== */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.aurora-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+}
+
+.aurora-1 {
+  width: 600px;
+  height: 600px;
+  background: #5f8cff;
+  top: -150px;
+  left: -100px;
+  animation: auroraMove1 22s ease-in-out infinite;
+}
+
+.aurora-2 {
+  width: 500px;
+  height: 500px;
+  background: #8b5cf6;
+  top: 20%;
+  right: -150px;
+  animation: auroraMove2 26s ease-in-out infinite;
+}
+
+.aurora-3 {
+  width: 550px;
+  height: 550px;
+  background: #00aaff;
+  bottom: -200px;
+  left: 30%;
+  animation: auroraMove3 30s ease-in-out infinite;
+}
+
+.aurora-4 {
+  width: 400px;
+  height: 400px;
+  background: #6f5cff;
+  top: 50%;
+  left: 10%;
+  animation: auroraMove4 24s ease-in-out infinite;
+}
+
+@keyframes auroraMove1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(120px, 80px) scale(1.15); }
+  66% { transform: translate(60px, 160px) scale(0.95); }
+}
+
+@keyframes auroraMove2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-100px, 100px) scale(1.1); }
+  66% { transform: translate(-160px, 40px) scale(0.9); }
+}
+
+@keyframes auroraMove3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-80px, -120px) scale(1.2); }
+  66% { transform: translate(100px, -60px) scale(1); }
+}
+
+@keyframes auroraMove4 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(140px, -100px) scale(1.15); }
+}
+
+/* Na mobilu míň náročné — menší blur, méně pohybu */
+@media (max-width: 768px) {
+  .aurora-blob {
+    filter: blur(70px);
+    opacity: 0.4;
+  }
+}
+
+/* Respektuj nastavení "omezit pohyb" v systému */
+@media (prefers-reduced-motion: reduce) {
+  .aurora-blob {
+    anima
