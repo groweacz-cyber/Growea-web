@@ -14,6 +14,7 @@ import AuditTool from "./AuditTool"
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
   const [chatOpen, setChatOpen] = useState(false)
+  const [auditOpen, setAuditOpen] = useState(false)
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -80,7 +81,7 @@ export default function App() {
 
           <button
             className="nav-audit"
-            onClick={() => scrollTo("audit")}
+            onClick={() => setAuditOpen(true)}
           >
             <span className="nav-audit-badge">Zkus mě zdarma</span>
             AI audit
@@ -227,31 +228,43 @@ export default function App() {
       </section>
       </Reveal>
 
-      {/* AI AUDIT */}
-      <Reveal>
-      <section
-        className="audit-section"
-        id="audit"
-      >
+{/* AI AUDIT MODAL */}
+      {auditOpen && (
+        <div
+          className="audit-overlay"
+          onClick={() => setAuditOpen(false)}
+        >
+          <div
+            className="audit-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="audit-modal-close"
+              onClick={() => setAuditOpen(false)}
+              aria-label="Zavřít"
+            >
+              ✕
+            </button>
 
-        <div className="section-sub">
-          AI AUDIT ZDARMA
+            <div className="section-sub">
+              AI AUDIT ZDARMA
+            </div>
+
+            <h2 className="audit-modal-title">
+              Získejte AI mini-audit
+              vašeho marketingu
+            </h2>
+
+            <p className="audit-intro">
+              Vyplňte tři údaje a naše AI vám během chvíle připraví
+              konkrétní tipy, jak zlepšit váš marketing. Zdarma a nezávazně.
+            </p>
+
+            <AuditTool />
+
+          </div>
         </div>
-
-        <h2>
-          Získejte AI mini-audit
-          vašeho marketingu
-        </h2>
-
-        <p className="audit-intro">
-          Vyplňte tři údaje a naše AI vám během chvíle připraví
-          konkrétní tipy, jak zlepšit váš marketing. Zdarma a nezávazně.
-        </p>
-
-        <AuditTool />
-
-      </section>
-      </Reveal>
+      )}
 
       {/* REFERENCES */}
       <Reveal>
