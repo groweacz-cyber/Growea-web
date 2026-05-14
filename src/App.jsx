@@ -1,5 +1,6 @@
 import logo from "../logo.png.png"
 import "./index.css"
+import ChatWidget from "./ChatWidget"
 
 export default function App() {
 
@@ -402,7 +403,7 @@ export default function App() {
         </div>
 
       </footer>
-
+<ChatWidget />
     </div>
   )
 }
