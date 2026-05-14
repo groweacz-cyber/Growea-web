@@ -51,10 +51,16 @@ export default function WelcomeBot({ onOpenChat }) {
       utterance.rate = 1
       utterance.pitch = 1.1
 
-      // Zkus najít český hlas
+      // Zkus najít ženský český hlas
       const voices = window.speechSynthesis.getVoices()
-      const czVoice = voices.find((v) => v.lang.startsWith('cs'))
-      if (czVoice) utterance.voice = czVoice
+      const czVoices = voices.filter((v) => v.lang.startsWith('cs'))
+      // Preferuj hlas, který má v názvu náznak ženského jména/označení
+      const femaleVoice =
+        czVoices.find((v) =>
+          /female|žena|zuzana|iveta|laura|google/i.test(v.name)
+        ) || czVoices[0]
+      if (femaleVoice) utterance.voice = femaleVoice
+      utterance.pitch = 1.25
 
       utterance.onstart = () => setSpeaking(true)
       utterance.onend = () => setSpeaking(false)
