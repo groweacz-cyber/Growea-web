@@ -218,8 +218,8 @@ export default function App() {
         </div>
 
         <h2>
-          Důvěřují nám projekty,
-          které rostou
+          Důvěřují nám projekty
+          jako např.:
         </h2>
 
         <div className="ref-grid">
@@ -242,7 +242,9 @@ export default function App() {
           <div className="ref-card">
 
             <h3>
-              Autodoprava Vondrášek
+              Autodoprava
+              <br />
+              Vondrášek s.r.o.
             </h3>
 
             <p>
@@ -250,16 +252,24 @@ export default function App() {
               e-commerce.
             </p>
 
+            <div className="ref-highlight">
+              +120 % YTY
+            </div>
+
           </div>
 
           <div className="ref-card">
 
-            <h3>czfkk.cz</h3>
+            <h3>Czech Wellness</h3>
 
             <p>
               Weby, sociální skupiny,
               digitální obsah.
             </p>
+
+            <div className="ref-highlight">
+              +128 % YTY
+            </div>
 
           </div>
 
