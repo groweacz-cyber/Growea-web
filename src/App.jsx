@@ -9,6 +9,7 @@ import WelcomeBot from "./WelcomeBot"
 import LanguageSwitcher from "./LanguageSwitcher"
 import CountUp from "./CountUp"
 import CustomCursor from "./CustomCursor"
+import AuditTool from "./AuditTool"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
@@ -63,6 +64,10 @@ export default function App() {
 
           <button onClick={() => scrollTo("services")}>
             Social marketing
+          </button>
+          
+          <button onClick={() => scrollTo("audit")}>
+            AI audit
           </button>
 
           <button onClick={() => scrollTo("tech")}>
@@ -214,6 +219,32 @@ export default function App() {
           </div>
 
         </div>
+
+      </section>
+      </Reveal>
+
+      {/* AI AUDIT */}
+      <Reveal>
+      <section
+        className="audit-section"
+        id="audit"
+      >
+
+        <div className="section-sub">
+          AI AUDIT ZDARMA
+        </div>
+
+        <h2>
+          Získejte AI mini-audit
+          vašeho marketingu
+        </h2>
+
+        <p className="audit-intro">
+          Vyplňte tři údaje a naše AI vám během chvíle připraví
+          konkrétní tipy, jak zlepšit váš marketing. Zdarma a nezávazně.
+        </p>
+
+        <AuditTool />
 
       </section>
       </Reveal>
