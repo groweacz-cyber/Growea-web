@@ -242,8 +242,6 @@ export default function App() {
           <div className="ref-card">
 
             <h3>
-              Autodoprava
-              <br />
               Vondrášek s.r.o.
             </h3>
 
