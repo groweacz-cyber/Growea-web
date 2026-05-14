@@ -4,6 +4,7 @@ import logo from "../logo.png.png"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
+import Reveal from "./Reveal"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
