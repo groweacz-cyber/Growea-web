@@ -5,10 +5,11 @@ import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
 import Reveal from "./Reveal"
+import WelcomeBot from "./WelcomeBot"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
-    const [chatOpen, setChatOpen] = useState(false)
+  const [chatOpen, setChatOpen] = useState(false)
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -419,7 +420,7 @@ export default function App() {
 
       </footer>
 
-      <ChatWidget />
+      <ChatWidget open={chatOpen} setOpen={setChatOpen} />
       <WelcomeBot onOpenChat={() => setChatOpen(true)} />
       <CookieConsent onConsentChange={setAnalyticsOn} />
       {analyticsOn && <Analytics />}
