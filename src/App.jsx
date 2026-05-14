@@ -7,6 +7,7 @@ import CookieConsent from "./CookieConsent"
 import Reveal from "./Reveal"
 import WelcomeBot from "./WelcomeBot"
 import LanguageSwitcher from "./LanguageSwitcher"
+import CountUp from "./CountUp"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
@@ -235,7 +236,7 @@ export default function App() {
             </p>
 
             <div className="ref-highlight">
-              +50 % YTY
+              <CountUp end={50} prefix="+" suffix=" % YTY" />
             </div>
 
           </div>
@@ -252,7 +253,7 @@ export default function App() {
             </p>
 
             <div className="ref-highlight">
-              +120 % YTY
+        <CountUp end={120} prefix="+" suffix=" % YTY" />
             </div>
 
           </div>
@@ -267,7 +268,7 @@ export default function App() {
             </p>
 
             <div className="ref-highlight">
-              +128 % YTY
+  <CountUp end={128} prefix="+" suffix=" % YTY" />
             </div>
 
           </div>
