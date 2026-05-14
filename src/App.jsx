@@ -56,18 +56,10 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="nav">
-
-          <button onClick={() => scrollTo("hero")}>
-            O nás
-          </button>
+<nav className="nav">
 
           <button onClick={() => scrollTo("services")}>
             Social marketing
-          </button>
-          
-          <button onClick={() => scrollTo("audit")}>
-            AI audit
           </button>
 
           <button onClick={() => scrollTo("tech")}>
@@ -78,8 +70,20 @@ export default function App() {
             AI domény
           </button>
 
+          <button onClick={() => scrollTo("hero")}>
+            O nás
+          </button>
+
           <button onClick={() => scrollTo("contact")}>
             Kontakt
+          </button>
+
+          <button
+            className="nav-audit"
+            onClick={() => scrollTo("audit")}
+          >
+            <span className="nav-audit-badge">Zkus mě zdarma</span>
+            AI audit
           </button>
 
         </nav>
