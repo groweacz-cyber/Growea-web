@@ -1782,3 +1782,46 @@ body {
     padding: 80px 20px;
   }
 }
+/* ===== NAV AUDIT BUTTON ===== */
+.nav-audit {
+  position: relative;
+  color: #a78bfa !important;
+  font-weight: 600 !important;
+}
+
+.nav-audit:hover {
+  color: #c4b5fd !important;
+}
+
+.nav-audit-badge {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: linear-gradient(135deg, #5f8cff, #8b5cf6);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.45);
+  animation: auditBadgeFloat 2.5s ease-in-out infinite;
+}
+
+/* Špička bubliny */
+.nav-audit-badge::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #8b5cf6;
+}
+
+@keyframes auditBadgeFloat {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-3px); }
+}
