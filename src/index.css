@@ -1457,7 +1457,7 @@ body {
 .aurora-1 {
   width: 600px;
   height: 600px;
-  background: #6f5cff;
+  background: #4422ff;
   top: -150px;
   left: -100px;
   animation: auroraMove1 22s ease-in-out infinite;
@@ -1466,7 +1466,7 @@ body {
 .aurora-2 {
   width: 500px;
   height: 500px;
-  background: #8b5cf6;
+  background: #5f8cff;
   top: 20%;
   right: -150px;
   animation: auroraMove2 26s ease-in-out infinite;
@@ -1475,7 +1475,7 @@ body {
 .aurora-3 {
   width: 550px;
   height: 550px;
-  background: #7c4dff;
+  background: #00aaff;
   bottom: -200px;
   left: 30%;
   animation: auroraMove3 30s ease-in-out infinite;
@@ -1484,7 +1484,7 @@ body {
 .aurora-4 {
   width: 400px;
   height: 400px;
-  background: #9d6bff;
+  background: #8b5cf6;
   top: 50%;
   left: 10%;
   animation: auroraMove4 24s ease-in-out infinite;
@@ -1525,5 +1525,7 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .aurora-blob {
     animation: none;
+  }
+}
   }
 }
