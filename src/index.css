@@ -1315,3 +1315,67 @@ body::before {
     height: 52px;
   }
 }
+/* ===== LANGUAGE SWITCHER ===== */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+}
+
+/* Select box Google Translate */
+.lang-switcher .goog-te-combo {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ddd;
+  font-family: 'Sora', sans-serif;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.lang-switcher .goog-te-combo:hover {
+  border-color: rgba(107, 124, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Skryj horní lištu, kterou Google vkládá */
+.goog-te-banner-frame,
+.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+/* Skryj "Powered by Google" a ikonu */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+  font-size: 13px !important;
+  margin: 0 !important;
+}
+
+/* Skryj tooltip/hover rámeček Google Translate */
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1000px) {
+  .lang-switcher {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 30;
+  }
+}
