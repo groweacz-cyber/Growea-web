@@ -1220,14 +1220,80 @@ body::before {
 }
 
 .welcome-bot-avatar {
-  width: 64px;
-  height: 64px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(95, 140, 255, 0.5);
-  box-shadow: 0 0 24px rgba(95, 140, 255, 0.45);
+  border: 2.5px solid rgba(95, 140, 255, 0.6);
+  box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
   flex-shrink: 0;
   background: #0a0a12;
+  animation: avatarBreathe 4s ease-in-out infinite;
+}
+
+@keyframes avatarBreathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 42px rgba(124, 92, 255, 0.65);
+  }
+}
+
+/* Když robot "mluví" — výraznější pulz */
+.welcome-bot-avatar.is-speaking {
+  animation: avatarSpeaking 0.6s ease-in-out infinite;
+}
+
+@keyframes avatarSpeaking {
+  0%, 100% {
+    transform: scale(1.03);
+    box-shadow: 0 0 36px rgba(124, 92, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.09);
+    box-shadow: 0 0 55px rgba(100, 216, 255, 0.8);
+  }
+}.welcome-bot-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid rgba(95, 140, 255, 0.6);
+  box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
+  flex-shrink: 0;
+  background: #0a0a12;
+  animation: avatarBreathe 4s ease-in-out infinite;
+}
+
+@keyframes avatarBreathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0 42px rgba(124, 92, 255, 0.65);
+  }
+}
+
+/* Když robot "mluví" — výraznější pulz */
+.welcome-bot-avatar.is-speaking {
+  animation: avatarSpeaking 0.6s ease-in-out infinite;
+}
+
+@keyframes avatarSpeaking {
+  0%, 100% {
+    transform: scale(1.03);
+    box-shadow: 0 0 36px rgba(124, 92, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.09);
+    box-shadow: 0 0 55px rgba(100, 216, 255, 0.8);
+  }
+}
 }
 
 .welcome-bot-bubble {
@@ -1305,8 +1371,8 @@ body::before {
     max-width: none;
   }
   .welcome-bot-avatar {
-    width: 52px;
-    height: 52px;
+    width: 70px;
+    height: 70px;
   }
 }
 /* ===== LANGUAGE SWITCHER ===== */
