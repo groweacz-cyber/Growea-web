@@ -1,9 +1,12 @@
+import { useState } from "react"
+import { Analytics } from "@vercel/analytics/react"
 import logo from "../logo.png.png"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
+import CookieConsent from "./CookieConsent"
 
 export default function App() {
-
+  const [analyticsOn, setAnalyticsOn] = useState(false)
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -404,6 +407,8 @@ export default function App() {
 
       </footer>
 <ChatWidget />
+<CookieConsent onConsentChange={setAnalyticsOn} />
+{analyticsOn && <Analytics />}
     </div>
   )
 }
