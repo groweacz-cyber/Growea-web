@@ -26,6 +26,14 @@ export default function App() {
       <div className="bg-glow glow-1"></div>
       <div className="bg-glow glow-2"></div>
 
+            {/* AURORA MESH */}
+      <div className="aurora">
+        <div className="aurora-blob aurora-1"></div>
+        <div className="aurora-blob aurora-2"></div>
+        <div className="aurora-blob aurora-3"></div>
+        <div className="aurora-blob aurora-4"></div>
+      </div>
+
       {/* NAVBAR */}
       <header className="navbar">
 
