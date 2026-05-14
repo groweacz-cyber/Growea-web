@@ -1388,3 +1388,58 @@ body {
     display: none;
   }
 }
+/* ===== CUSTOM CURSOR ===== */
+/* Schovej systémový kurzor jen když je náš aktivní */
+.custom-cursor-active,
+.custom-cursor-active * {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: #8b5cf6;
+  pointer-events: none;
+  z-index: 99999;
+  transition: opacity 0.3s ease;
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border: 1.5px solid rgba(139, 92, 246, 0.6);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transition: width 0.25s ease, height 0.25s ease, margin 0.25s ease,
+    border-color 0.25s ease, background 0.25s ease, opacity 0.3s ease;
+}
+
+.cursor-ring-hover {
+  width: 54px;
+  height: 54px;
+  margin: -27px 0 0 -27px;
+  border-color: rgba(100, 216, 255, 0.8);
+  background: rgba(139, 92, 246, 0.12);
+}
+
+.cursor-hidden {
+  opacity: 0;
+}
+
+/* Na dotykových zařízeních kurzor úplně skryj */
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none;
+  }
+}
