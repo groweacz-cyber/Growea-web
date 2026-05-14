@@ -1530,4 +1530,6 @@ body {
 /* Respektuj nastavení "omezit pohyb" v systému */
 @media (prefers-reduced-motion: reduce) {
   .aurora-blob {
-    anima
+  animation: none;
+  }
+}
