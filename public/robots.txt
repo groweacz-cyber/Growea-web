@@ -1,4 +1,4 @@
 User-agent: *
-   Allow: /
+Allow: /
 
-   Sitemap: https://growea-web-zstn.vercel.app/sitemap.xml
+Sitemap: https://growea.eu/sitemap.xml
