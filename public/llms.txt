@@ -1,8 +1,8 @@
 # Growea
 
-> Growea je česká marketingová agentura, která propojuje umělou inteligenci s marketingem. Pomáhá firmám a e-shopům růst díky výkonnostní reklamě, tvorbě obsahu, webům a SEO — s důrazem na AI technologie, rychlost a osobní přístup.
+> Growea je česká marketingová a technologická agentura, která propojuje umělou inteligenci s marketingem, tvorbou obsahu a softwarem. Pomáhá firmám a e-shopům růst díky výkonnostní reklamě, videím, webům a SEO — a zároveň vyvíjí AI software a nabízí prémiové AI domény.
 
-Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, startupy, řemeslníky i korporátní klienty. Kombinuje moderní AI nástroje s výkonnostním marketingem, tvorbou videí a obsahu a vývojem webů. Působí v České republice a na Slovensku, okrajově i v rámci Evropské unie.
+Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, startupy, řemeslníky i korporátní klienty. Kombinuje moderní AI nástroje s výkonnostním marketingem, tvorbou videí a obsahu, vývojem webů a softwaru. Působí v České republice a na Slovensku, okrajově i v rámci Evropské unie.
 
 ## Služby
 
@@ -24,6 +24,10 @@ Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, 
 - Tvorba webových stránek
 - SEO optimalizace pro vyhledávače Google a Seznam
 - Řešení pro e-shopy a e-commerce projekty
+
+**AI software a AI domény:**
+- Vývoj AI softwaru a aplikací na míru
+- Prémiové AI domény
 
 ## Pro koho je Growea určena
 - Malé a střední firmy
