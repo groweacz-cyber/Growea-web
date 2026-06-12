@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function AuditTool() {
+export default function AuditTool({ onClose }) {
   const [obor, setObor] = useState('')
   const [cil, setCil] = useState('')
   const [kanaly, setKanaly] = useState('')
@@ -112,9 +112,17 @@ export default function AuditTool() {
           <div className="audit-result-cta">
             <p>Chcete to probrat podrobněji a získat konkrétní plán?</p>
             <div className="audit-result-actions">
-              <a href="mailto:groweacz@gmail.com" className="btn-primary">
+<button
+                className="btn-primary"
+                onClick={() => {
+                  if (onClose) onClose()
+                  setTimeout(() => {
+                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                  }, 100)
+                }}
+              >
                 Ozvat se Growea
-              </a>
+              </button>
               <button className="btn-secondary" onClick={reset}>
                 Nový audit
               </button>
