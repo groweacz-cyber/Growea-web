@@ -324,7 +324,7 @@ export default function App() {
               tipy, jak zlepšit váš marketing. Zdarma a nezávazně.
             </p>
 
-            <AuditTool />
+<AuditTool onClose={() => setAuditOpen(false)} />
           </div>
         </div>
       )}
