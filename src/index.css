@@ -1825,3 +1825,231 @@ body {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(-3px); }
 }
+
+/* ============================================
+   PILLARS (akordeon) — nové sekce
+   ============================================ */
+
+.services-lead {
+  text-align: center;
+  color: rgba(231, 236, 243, 0.6);
+  margin: -8px 0 32px;
+  font-size: 0.95rem;
+}
+
+.pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.pillar {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.pillar.open {
+  border-color: rgba(120, 160, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pillar-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 26px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+}
+
+.pillar-head-text h3 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.pillar-tagline {
+  font-size: 0.92rem;
+  color: rgba(231, 236, 243, 0.6);
+}
+
+.pillar-toggle {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  border-radius: 50%;
+  background: rgba(120, 160, 255, 0.15);
+  color: #9ab8ff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.pillar.open .pillar-toggle {
+  background: rgba(120, 160, 255, 0.3);
+  transform: rotate(180deg);
+}
+
+.pillar-body {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease, opacity 0.35s ease, padding 0.45s ease;
+  padding: 0 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.pillar.open .pillar-body {
+  max-height: 1200px;
+  opacity: 1;
+  padding: 4px 26px 30px;
+}
+
+.pillar-block h4 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #9ab8ff;
+}
+
+.pillar-block p {
+  margin: 0 0 12px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(231, 236, 243, 0.8);
+}
+
+.pillar-block ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.pillar-block li {
+  font-size: 0.92rem;
+  color: rgba(231, 236, 243, 0.85);
+}
+
+.pillar-note {
+  font-size: 0.85rem !important;
+  color: rgba(231, 236, 243, 0.55) !important;
+  font-style: italic;
+}
+
+.pillar-cta {
+  margin-top: 6px;
+}
+
+/* ============================================
+   WHY GROWEA — 6 hodnot
+   ============================================ */
+
+.why {
+  padding: 90px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.why-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 24px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(120, 160, 255, 0.4);
+}
+
+.why-card h4 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #9ab8ff;
+}
+
+.why-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(231, 236, 243, 0.75);
+}
+
+/* ============================================
+   INSPIRATION — kdo nás inspiruje
+   ============================================ */
+
+.inspiration {
+  padding: 90px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.inspiration h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.insp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+}
+
+.insp-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 22px;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.insp-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(120, 160, 255, 0.4);
+}
+
+.insp-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.insp-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgba(231, 236, 243, 0.65);
+}
