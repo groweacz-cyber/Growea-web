@@ -255,6 +255,15 @@ export default function App() {
                     <li>Skvělá prezentace firmy</li>
                   </ul>
                 </div>
+                
+               <div className="pillar-block">
+                  <h4>AI asistenti, agenti a chatboti</h4>
+                  <p>
+                    Vytvoříme AI asistenta na míru, který zná vaši firmu a
+                    obsluhuje zákazníky 24/7 — odpovídá na dotazy, doporučuje
+                    produkty a sbírá poptávky, i když zrovna spíte.
+                  </p>
+                </div>
               </div>
             </div>
 
