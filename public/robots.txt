@@ -14,4 +14,17 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# Social media crawlers (náhledy při sdílení)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
 Sitemap: https://growea.eu/sitemap.xml
