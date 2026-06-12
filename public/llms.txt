@@ -6,28 +6,26 @@ Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, 
 
 ## Služby
 
-**Výkonnostní reklama (PPC):**
-- Meta Ads — tvorba a správa reklamních kampaní na Facebooku a Instagramu
-- Meta Event / Pixel — nastavení měření konverzí a událostí
-- Meta Business — nastavení a správa firemního účtu na Meta platformách
-- Google Ads — vyhledávací, obsahové a nákupní (Shopping) kampaně
-- Sklik — výkonnostní reklama ve vyhledávači Seznam.cz
+**Komplexní social marketing:**
+- Meta, Meta Ads, Google Ads, Sklik
+- TikTok, Instagram, YouTube — videa a Reels
+- E-booky, videa, grafika
+- AI agenti pro vyšší výkon
+- Branding: firemní identita, brand manuál, jednotný vizuální styl a marketingové materiály
+- Online marketing: PPC kampaně, linkbuildingové strategie, přehled odkazového portfolia, V.I.P. poradenství
 
-**Obsah a video:**
-- Instagram Reels a video tvorba
-- Facebook Reels a video tvorba
-- TikTok video tvorba
-- YouTube video tvorba
-- Letáky, e-booky a magazíny
+**Vývoj AI aplikací a softwaru:**
+- AI aplikace na míru pro zdravotnictví, logistiku, průmysl a obchod
+- Tvorba webových stránek: moderní design, dohledatelnost ve vyhledávačích, spolehlivost
 
-**Web, SEO a e-commerce:**
-- Tvorba webových stránek
-- SEO optimalizace pro vyhledávače Google a Seznam
-- Řešení pro e-shopy a e-commerce projekty
+**Prémiové AI domény:**
+- Exkluzivní AI digitální aktiva pro startupy, projekty a značky
+- Omezené portfolio prémiových domén (2027–2030)
 
-**AI software a AI domény:**
-- Vývoj AI softwaru a aplikací na míru
-- Prémiové AI domény
+## Reference
+- Kimchihero.cz — komplexní řízení e-commerce a marketingu
+- Vondrášek s.r.o. — Google reklamy, web, e-commerce
+- Czech Wellness — weby, sociální skupiny, digitální obsah
 
 ## Pro koho je Growea určena
 - Malé a střední firmy
@@ -41,14 +39,13 @@ Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, 
 - Okrajově: Evropská unie
 
 ## Proč si vybrat Groweu
-- AI expertíza — praktická znalost AI nástrojů a jejich nasazení do marketingu
-- Moderní AI technologie pro efektivnější kampaně a tvorbu obsahu
+- AI expertíza a moderní AI technologie
 - Osobní přístup ke každému klientovi
-- Rychlost realizace
+- Rychlost realizace a důraz na měřitelné výsledky
 - Reference z realizovaných projektů
 
 ## Ceny
-Cena je stanovena individuálně podle rozsahu a typu projektu. Pro nezávaznou cenovou nabídku kontaktujte Growea.
+Cena je stanovena individuálně podle rozsahu a typu projektu.
 
 ## Kontakt
 - Web: https://growea.eu
