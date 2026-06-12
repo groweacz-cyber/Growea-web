@@ -352,7 +352,24 @@ export default function App() {
       {/* WHY GROWEA — 6 hodnot */}
       <Reveal>
         <section className="why" id="why">
-          <div className="section-sub">PROČ GROWEA</div>
+<div className="section-sub">PROČ GROWEA</div>
+
+          <div className="founder-intro">
+            <h2 className="founder-heading">
+              Spojujeme marketing s umělou inteligencí.
+            </h2>
+            <p>
+              Kromě vývoje AI softwaru a nabídky prémiových AI domén se
+              specializujeme především na komplexní sociální marketing. Naše
+              výhoda? Propojení osvědčených marketingových postupů s
+              nejmodernějšími AI technologiemi a strojovým učením — pro vyšší
+              výkon a měřitelné výsledky.
+            </p>
+            <div className="founder-photo">
+              <img src="/vaclav.jpg" alt="Václav Kodéš — zakladatel Growea" />
+            </div>
+          </div>
+
           <h2>Na čem nám záleží</h2>
 
           <div className="why-grid">
