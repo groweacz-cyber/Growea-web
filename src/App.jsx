@@ -60,15 +60,7 @@ export default function App() {
           </div>
         </div>
 
-<button
-          className="mobile-menu-toggle"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Menu"
-        >
-          {mobileMenuOpen ? "✕" : "☰"}
-        </button>
-
-<nav className={`nav ${mobileMenuOpen ? "mobile-open" : ""}`}>
+        <nav className={`nav ${mobileMenuOpen ? "mobile-open" : ""}`}>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>Social marketing</button>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI software</button>
           <button onClick={() => { scrollTo("domains"); setMobileMenuOpen(false) }}>AI domény</button>
@@ -79,7 +71,16 @@ export default function App() {
             AI audit
           </button>
         </nav>
+
         <LanguageSwitcher />
+
+        <button
+          className="mobile-menu-toggle"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Menu"
+        >
+          {mobileMenuOpen ? "✕" : "☰"}
+        </button>
       </header>
 
       {/* HERO */}
@@ -271,8 +272,8 @@ export default function App() {
                     <li>Skvělá prezentace firmy</li>
                   </ul>
                 </div>
-                
-               <div className="pillar-block">
+
+                <div className="pillar-block">
                   <h4>AI asistenti, agenti a chatboti</h4>
                   <p>
                     Vytvoříme AI asistenta na míru, který zná vaši firmu a
@@ -349,7 +350,7 @@ export default function App() {
               tipy, jak zlepšit váš marketing. Zdarma a nezávazně.
             </p>
 
-<AuditTool onClose={() => setAuditOpen(false)} />
+            <AuditTool onClose={() => setAuditOpen(false)} />
           </div>
         </div>
       )}
@@ -377,7 +378,7 @@ export default function App() {
       {/* WHY GROWEA — 6 hodnot */}
       <Reveal>
         <section className="why" id="why">
-<div className="section-sub">PROČ GROWEA</div>
+          <div className="section-sub">PROČ GROWEA</div>
 
           <div className="founder-intro">
             <h2 className="founder-heading">
@@ -551,6 +552,7 @@ export default function App() {
           <path d="M5 12l7-7 7 7" />
         </svg>
       </button>
+
       <ChatWidget open={chatOpen} setOpen={setChatOpen} />
       <WelcomeBot onOpenChat={() => setChatOpen(true)} />
       <CookieConsent onConsentChange={setAnalyticsOn} />
