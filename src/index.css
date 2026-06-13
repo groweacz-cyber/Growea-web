@@ -2165,3 +2165,8 @@ body {
   line-height: 1.6;
   color: rgba(231, 236, 243, 0.75);
 }
+/* DOČASNÝ TEST — smažeme potom */
+.pillar:hover {
+  border: 3px solid red !important;
+  transform: translateY(-10px) !important;
+}
