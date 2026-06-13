@@ -330,24 +330,20 @@ body{
 }
 
 /* ============================================
-   PILLARS — hover efekt (jako why-card)
+   PILLARS — hover efekt (zvednutí + zvýraznění)
    ============================================ */
-
 .pillar {
   cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease, background 0.3s ease;
 }
-
 .pillar:hover {
-  transform: translateY(-4px);
-  border-color: rgba(120, 160, 255, 0.5);
+  transform: translateY(-6px);
+  border-color: rgba(120, 160, 255, 0.6);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.05);
 }
-
-/* jemný zvýrazňující stín při najetí */
-.pillar:hover {
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
-}
-
-/* aby se zvednutí nepralo s otevřeným stavem — otevřený pilíř zůstává na místě */
+/* otevřený pilíř se nezvedá, ať to neposkakuje */
 .pillar.open:hover {
   transform: none;
 }
