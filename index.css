@@ -328,3 +328,26 @@ body{
   font-size:28px;
 }
 }
+
+/* ============================================
+   PILLARS — hover efekt (jako why-card)
+   ============================================ */
+
+.pillar {
+  cursor: pointer;
+}
+
+.pillar:hover {
+  transform: translateY(-4px);
+  border-color: rgba(120, 160, 255, 0.5);
+}
+
+/* jemný zvýrazňující stín při najetí */
+.pillar:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* aby se zvednutí nepralo s otevřeným stavem — otevřený pilíř zůstává na místě */
+.pillar.open:hover {
+  transform: none;
+}
