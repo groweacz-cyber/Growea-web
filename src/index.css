@@ -2175,3 +2175,37 @@ body {
 .pillar.open:hover {
   transform: none !important;
 }
+/* ===== SCROLL TO TOP ===== */
+.scroll-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #8b5cf6;
+  color: #fff;
+  cursor: pointer;
+  z-index: 9998;
+  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+}
+.scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.scroll-top svg {
+  display: block;
+}
+.scroll-top.visible:hover {
+  background: #7c3aed;
+  transform: translateY(-3px) scale(1.06);
+}
