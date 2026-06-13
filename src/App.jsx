@@ -528,7 +528,19 @@ export default function App() {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         aria-label="Nahoru"
       >
-        ↑
+        <svg
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 19V5" />
+          <path d="M5 12l7-7 7 7" />
+        </svg>
       </button>
       <ChatWidget open={chatOpen} setOpen={setChatOpen} />
       <WelcomeBot onOpenChat={() => setChatOpen(true)} />
