@@ -330,20 +330,31 @@ body{
 }
 
 /* ============================================
-   PILLARS — hover efekt (zvednutí + zvýraznění)
+   PILLARS — hover efekt (odolná verze)
    ============================================ */
-.pillar {
-  cursor: pointer;
+.pillars .pillar {
+  cursor: pointer !important;
   transition: transform 0.3s ease, border-color 0.3s ease,
-    box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow 0.3s ease, background 0.3s ease !important;
 }
-.pillar:hover {
+
+/* hover přes celý pilíř I přes jeho hlavičku (button) */
+.pillars .pillar:hover,
+.pillars .pillar-head:hover {
   transform: translateY(-6px);
-  border-color: rgba(120, 160, 255, 0.6);
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.4);
-  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(120, 160, 255, 0.7) !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
 }
-/* otevřený pilíř se nezvedá, ať to neposkakuje */
-.pillar.open:hover {
+
+/* když je hover na hlavičce, posuň celý pilíř (ne jen button) */
+.pillars .pillar:has(.pillar-head:hover) {
+  transform: translateY(-6px);
+  border-color: rgba(120, 160, 255, 0.7) !important;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45) !important;
+}
+
+.pillars .pillar.open:hover,
+.pillars .pillar.open:has(.pillar-head:hover) {
   transform: none;
 }
