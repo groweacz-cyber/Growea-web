@@ -17,6 +17,7 @@ export default function App() {
   const [auditOpen, setAuditOpen] = useState(false)
   const [openPillar, setOpenPillar] = useState(null)
   const [showTop, setShowTop] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 500)
@@ -59,13 +60,21 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="nav">
-          <button onClick={() => scrollTo("services")}>Social marketing</button>
-          <button onClick={() => scrollTo("services")}>AI software</button>
-          <button onClick={() => scrollTo("domains")}>AI domény</button>
-          <button onClick={() => scrollTo("why")}>Proč Growea</button>
-          <button onClick={() => scrollTo("contact")}>Kontakt</button>
-          <button className="nav-audit" onClick={() => setAuditOpen(true)}>
+<button
+          className="mobile-menu-toggle"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Menu"
+        >
+          {mobileMenuOpen ? "✕" : "☰"}
+        </button>
+
+<nav className={`nav ${mobileMenuOpen ? "mobile-open" : ""}`}>
+          <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>Social marketing</button>
+          <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI software</button>
+          <button onClick={() => { scrollTo("domains"); setMobileMenuOpen(false) }}>AI domény</button>
+          <button onClick={() => { scrollTo("why"); setMobileMenuOpen(false) }}>Proč Growea</button>
+          <button onClick={() => { scrollTo("contact"); setMobileMenuOpen(false) }}>Kontakt</button>
+          <button className="nav-audit" onClick={() => { setAuditOpen(true); setMobileMenuOpen(false) }}>
             <span className="nav-audit-badge">Zkus mě zdarma</span>
             AI audit
           </button>
