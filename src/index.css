@@ -2165,8 +2165,13 @@ body {
   line-height: 1.6;
   color: rgba(231, 236, 243, 0.75);
 }
-/* DOČASNÝ TEST — smažeme potom */
+/* PILLARS — červený hover efekt */
 .pillar:hover {
-  border: 3px solid red !important;
-  transform: translateY(-10px) !important;
+  border-color: #ff4d4d !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 44px rgba(255, 60, 60, 0.25) !important;
+  background: rgba(255, 70, 70, 0.04) !important;
+}
+.pillar.open:hover {
+  transform: none !important;
 }
