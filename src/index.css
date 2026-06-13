@@ -2209,3 +2209,94 @@ body {
   background: #7c3aed;
   transform: translateY(-3px) scale(1.06);
 }
+/* ============================================
+   MOBILE MENU — hamburger + drawer
+   ============================================ */
+
+/* Hamburger tlačítko — defaultně schované (desktop ho nevidí) */
+.mobile-menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.mobile-menu-toggle:hover {
+  background: rgba(139, 92, 246, 0.3);
+  transform: scale(1.05);
+}
+
+/* Mobilní zobrazení — pod 1000 px */
+@media (max-width: 1000px) {
+  /* Ukázat hamburger */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Nav schované defaultně, zobrazí se přes celou šířku po kliknutí */
+  .nav {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 340px;
+    height: 100vh;
+    background: rgba(10, 10, 20, 0.98);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(139, 92, 246, 0.3);
+    padding: 90px 24px 24px;
+    gap: 8px;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .nav.mobile-open {
+    transform: translateX(0);
+  }
+
+  /* Tlačítka v mobilním menu — větší, na celou šířku */
+  .nav button {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 17px;
+    text-align: left;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #e7ecf3;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+
+  .nav button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(139, 92, 246, 0.3);
+  }
+
+  /* AI audit — výrazněji jako CTA */
+  .nav .nav-audit {
+    margin-top: 12px;
+    background: linear-gradient(135deg, #8b5cf6, #5f8cff);
+    border-color: transparent;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .nav .nav-audit:hover {
+    background: linear-gradient(135deg, #7c3aed, #4f7eef);
+  }
+}
