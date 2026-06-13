@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Analytics } from "@vercel/analytics/react"
 import logo from "../logo.png.png"
 import "./index.css"
@@ -16,6 +16,13 @@ export default function App() {
   const [chatOpen, setChatOpen] = useState(false)
   const [auditOpen, setAuditOpen] = useState(false)
   const [openPillar, setOpenPillar] = useState(null)
+  const [showTop, setShowTop] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setShowTop(window.scrollY > 500)
+    window.addEventListener("scroll", onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   const togglePillar = (id) => {
     setOpenPillar(openPillar === id ? null : id)
@@ -515,6 +522,14 @@ export default function App() {
         </div>
       </footer>
 
+      {/* SCROLL TO TOP */}
+      <button
+        className={`scroll-top ${showTop ? "visible" : ""}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Nahoru"
+      >
+        ↑
+      </button>
       <ChatWidget open={chatOpen} setOpen={setChatOpen} />
       <WelcomeBot onOpenChat={() => setChatOpen(true)} />
       <CookieConsent onConsentChange={setAnalyticsOn} />
