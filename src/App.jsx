@@ -65,7 +65,6 @@ export default function App() {
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>Social marketing</button>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI software</button>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI Visibility</button>
-        
           <button onClick={() => { scrollTo("domains"); setMobileMenuOpen(false) }}>AI domény</button>
           <button onClick={() => { scrollTo("why"); setMobileMenuOpen(false) }}>Proč Growea</button>
           <button onClick={() => { scrollTo("contact"); setMobileMenuOpen(false) }}>Kontakt</button>
@@ -88,8 +87,6 @@ export default function App() {
 
       {/* HERO */}
       <section className="hero" id="hero">
-        <HeroBanner />
-        
         <div className="hero-left">
           <div className="hero-status">
             <span className="status-dot"></span>
@@ -125,6 +122,8 @@ export default function App() {
             <span>📞 +420 607 463 288</span>
           </div>
         </div>
+
+        <HeroBanner />
 
         <div className="hero-right">
           <div className="sphere hero-visual">
