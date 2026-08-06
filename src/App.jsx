@@ -162,11 +162,11 @@ export default function App() {
         </section>
       </Reveal>
 
-      {/* SERVICES — tři pilíře s akordeonem */}
+      {/* SERVICES — čtyři pilíře s akordeonem */}
       <Reveal>
         <section id="services" className="services-section">
           <div className="section-sub">NAŠE SLUŽBY</div>
-          <h2>Tři pilíře, na kterých stavíme</h2>
+          <h2>Čtyři pilíře, na kterých stavíme</h2>
           <p className="services-lead">
             Klikněte na pilíř a rozbalte detail služeb.
           </p>
@@ -320,6 +320,41 @@ export default function App() {
                   >
                     Zobrazit portfolio domén
                   </button>
+                </div>
+              </div>
+            </div>
+
+            {/* PILÍŘ 4 */}
+            <div className={`pillar ${openPillar === 4 ? "open" : ""}`}>
+              <button
+                className="pillar-head"
+                onClick={() => togglePillar(4)}
+                aria-expanded={openPillar === 4}
+              >
+                <div className="pillar-head-text">
+                  <h3>AI Visibility</h3>
+                  <span className="pillar-tagline">
+                    Připravíme vaši firmu na budoucnost vyhledávání.
+                  </span>
+                </div>
+                <span className="pillar-toggle">
+                  {openPillar === 4 ? "−" : "+"}
+                </span>
+              </button>
+
+              <div className="pillar-body">
+                <div className="pillar-block">
+                  <p>
+                    Zvýšíme viditelnost vaší značky v ChatGPT, Google AI
+                    a dalších AI asistentech — tam, kde dnes lidé čím dál
+                    častěji hledají odpovědi a doporučení.
+                  </p>
+                  <ul>
+                    <li>AI audit značky</li>
+                    <li>AI obsah a FAQ</li>
+                    <li>Budování digitální autority</li>
+                    <li>AI monitoring a strategie</li>
+                  </ul>
                 </div>
               </div>
             </div>
