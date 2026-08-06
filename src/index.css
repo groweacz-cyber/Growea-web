@@ -2358,9 +2358,8 @@ body {
 
 @media (max-width: 768px) {
   .hero-banner {
-    max-height: 160px;
-    aspect-ratio: 16 / 9;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    max-width: 100%;
+    margin: 0 auto 20px;
   }
+}
 }
