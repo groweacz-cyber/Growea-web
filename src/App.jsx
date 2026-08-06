@@ -63,6 +63,8 @@ export default function App() {
         <nav className={`nav ${mobileMenuOpen ? "mobile-open" : ""}`}>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>Social marketing</button>
           <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI software</button>
+          <button onClick={() => { scrollTo("services"); setMobileMenuOpen(false) }}>AI Visibility</button>
+        
           <button onClick={() => { scrollTo("domains"); setMobileMenuOpen(false) }}>AI domény</button>
           <button onClick={() => { scrollTo("why"); setMobileMenuOpen(false) }}>Proč Growea</button>
           <button onClick={() => { scrollTo("contact"); setMobileMenuOpen(false) }}>Kontakt</button>
