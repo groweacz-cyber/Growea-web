@@ -2304,7 +2304,7 @@ body {
 .hero-banner {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 350px;
   margin: 0 auto 32px;
   aspect-ratio: 1586 / 992;
   border-radius: 16px;
