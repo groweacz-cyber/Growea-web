@@ -10,7 +10,6 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import CountUp from "./CountUp"
 import CustomCursor from "./CustomCursor"
 import AuditTool from "./AuditTool"
-import HeroBanner from "./HeroBanner"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
@@ -85,6 +84,28 @@ export default function App() {
         </button>
       </header>
 
+      {/* MARQUEE — hlavní pilíře */}
+      <div className="marquee-bar">
+        <div className="marquee-track">
+          {[...Array(2)].map((_, i) => (
+            <div className="marquee-group" key={i}>
+              <span className="marquee-item">
+                <strong>AI VISIBILITY</strong> — Připravíme vaši firmu na budoucnost ve vyhledávání
+              </span>
+              <span className="marquee-dot">✦</span>
+              <span className="marquee-item">
+                <strong>SOCIAL MARKETING</strong> — Reklama, obsah a značka, které přinášejí zákazníky
+              </span>
+              <span className="marquee-dot">✦</span>
+              <span className="marquee-item">
+                <strong>VÝVOJ AI APLIKACÍ A SW</strong> — SW a appky, které řeší reálné problémy
+              </span>
+              <span className="marquee-dot">✦</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* HERO */}
       <section className="hero" id="hero">
         <div className="hero-left">
@@ -122,8 +143,6 @@ export default function App() {
             <span>📞 +420 607 463 288</span>
           </div>
         </div>
-
-        <HeroBanner />
 
         <div className="hero-right">
           <div className="sphere hero-visual">
