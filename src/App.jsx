@@ -10,6 +10,7 @@ import LanguageSwitcher from "./LanguageSwitcher"
 import CountUp from "./CountUp"
 import CustomCursor from "./CustomCursor"
 import AuditTool from "./AuditTool"
+import HeroBanner from "./HeroBanner"
 
 export default function App() {
   const [analyticsOn, setAnalyticsOn] = useState(false)
@@ -87,6 +88,8 @@ export default function App() {
 
       {/* HERO */}
       <section className="hero" id="hero">
+        <HeroBanner />
+        
         <div className="hero-left">
           <div className="hero-status">
             <span className="status-dot"></span>
