@@ -151,10 +151,10 @@ body::before {
 .hero {
   min-height: 92vh;
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.1fr auto auto;
   align-items: center;
   padding: 80px 60px;
-  gap: 60px;
+  gap: 40px;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -1256,44 +1256,6 @@ body::before {
     transform: scale(1.09);
     box-shadow: 0 0 55px rgba(100, 216, 255, 0.8);
   }
-}.welcome-bot-avatar {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2.5px solid rgba(95, 140, 255, 0.6);
-  box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
-  flex-shrink: 0;
-  background: #0a0a12;
-  animation: avatarBreathe 4s ease-in-out infinite;
-}
-
-@keyframes avatarBreathe {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 30px rgba(95, 140, 255, 0.5);
-  }
-  50% {
-    transform: scale(1.04);
-    box-shadow: 0 0 42px rgba(124, 92, 255, 0.65);
-  }
-}
-
-/* Když robot "mluví" — výraznější pulz */
-.welcome-bot-avatar.is-speaking {
-  animation: avatarSpeaking 0.6s ease-in-out infinite;
-}
-
-@keyframes avatarSpeaking {
-  0%, 100% {
-    transform: scale(1.03);
-    box-shadow: 0 0 36px rgba(124, 92, 255, 0.6);
-  }
-  50% {
-    transform: scale(1.09);
-    box-shadow: 0 0 55px rgba(100, 216, 255, 0.8);
-  
-}
 }
 
 .welcome-bot-bubble {
@@ -1449,7 +1411,6 @@ body {
   }
 }
 /* ===== CUSTOM CURSOR ===== */
-/* Schovej systémový kurzor jen když je náš aktivní */
 .custom-cursor-active,
 .custom-cursor-active * {
   cursor: none !important;
@@ -1496,7 +1457,6 @@ body {
   opacity: 0;
 }
 
-/* Na dotykových zařízeních kurzor úplně skryj */
 @media (hover: none) {
   .cursor-dot,
   .cursor-ring {
@@ -1579,7 +1539,6 @@ body {
   50% { transform: translate(140px, -100px) scale(1.15); }
 }
 
-/* Na mobilu míň náročné — menší blur, méně pohybu */
 @media (max-width: 768px) {
   .aurora-blob {
     filter: blur(70px);
@@ -1587,7 +1546,6 @@ body {
   }
 }
 
-/* Respektuj nastavení "omezit pohyb" v systému */
 @media (prefers-reduced-motion: reduce) {
   .aurora-blob {
     animation: none;
@@ -1810,7 +1768,6 @@ body {
   animation: auditBadgeFloat 2.5s ease-in-out infinite;
 }
 
-/* Špička bubliny */
 .nav-audit-badge::after {
   content: "";
   position: absolute;
@@ -1827,7 +1784,7 @@ body {
 }
 
 /* ============================================
-   PILLARS (akordeon) — nové sekce
+   PILLARS (akordeon)
    ============================================ */
 
 .services-lead {
@@ -1960,7 +1917,7 @@ body {
 }
 
 /* ============================================
-   WHY GROWEA — 6 hodnot
+   WHY GROWEA
    ============================================ */
 
 .why {
@@ -2008,7 +1965,7 @@ body {
 }
 
 /* ============================================
-   INSPIRATION — kdo nás inspiruje
+   INSPIRATION
    ============================================ */
 
 .inspiration {
@@ -2054,7 +2011,7 @@ body {
   color: rgba(231, 236, 243, 0.65);
 }
 /* ============================================
-   FOUNDER INTRO — Proč Growea (úvod + fotka)
+   FOUNDER INTRO
    ============================================ */
 
 .founder-intro {
@@ -2091,7 +2048,7 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
 /* ============================================
-   AUDIT MODAL — překryv přes celou obrazovku
+   AUDIT MODAL
    ============================================ */
 
 .audit-overlay {
@@ -2210,10 +2167,9 @@ body {
   transform: translateY(-3px) scale(1.06);
 }
 /* ============================================
-   MOBILE MENU — hamburger + drawer
+   MOBILE MENU
    ============================================ */
 
-/* Hamburger tlačítko — defaultně schované (desktop ho nevidí) */
 .mobile-menu-toggle {
   display: none;
   width: 44px;
@@ -2236,14 +2192,11 @@ body {
   transform: scale(1.05);
 }
 
-/* Mobilní zobrazení — pod 1000 px */
 @media (max-width: 1000px) {
-  /* Ukázat hamburger */
   .mobile-menu-toggle {
     display: flex;
   }
 
-  /* Nav schované defaultně, zobrazí se přes celou šířku po kliknutí */
   .nav {
     display: flex !important;
     flex-direction: column;
@@ -2268,7 +2221,6 @@ body {
     transform: translateX(0);
   }
 
-  /* Tlačítka v mobilním menu — větší, na celou šířku */
   .nav button {
     width: 100%;
     padding: 16px 18px;
@@ -2287,7 +2239,6 @@ body {
     border-color: rgba(139, 92, 246, 0.3);
   }
 
-  /* AI audit — výrazněji jako CTA */
   .nav .nav-audit {
     margin-top: 12px;
     background: linear-gradient(135deg, #8b5cf6, #5f8cff);
@@ -2303,17 +2254,14 @@ body {
 /* ===== HERO BANNER (prolínající obrázky) ===== */
 .hero-banner {
   position: relative;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 0 32px 0;
+  width: 340px;
   aspect-ratio: 1586 / 992;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
-  grid-column: 1 / -1;
   background: rgba(0, 0, 0, 0.3);
-
+  flex-shrink: 0;
 }
 
 .hero-banner-img {
@@ -2358,7 +2306,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-banner {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto 20px;
   }
 }
