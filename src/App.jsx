@@ -175,10 +175,10 @@ export default function App() {
             </div>
 
             <div className="ref-card">
-              <h3>Czech Wellness</h3>
-              <p>Weby, sociální skupiny, digitální obsah.</p>
+              <h3>Přenechto.cz</h3>
+              <p>Tržiště pro přenechání nevyužitých zájezdů, poukazů a vstupenek.</p>
               <div className="ref-highlight">
-                <CountUp end={128} prefix="+" suffix=" % YTY" />
+                Nový projekt 2026
               </div>
             </div>
           </div>
