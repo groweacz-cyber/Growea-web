@@ -170,7 +170,7 @@ export default function App() {
               <h3>Vondrášek s.r.o.</h3>
               <p>Multimodální logistický systém.</p>
               <div className="ref-highlight">
-                <CountUp end={120} prefix="+" suffix=" % YTY" />
+                Inovativní AI systém plně optimalizující dopravní i provozní náklady společnosti.
               </div>
             </div>
 
