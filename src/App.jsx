@@ -168,7 +168,7 @@ export default function App() {
 
             <div className="ref-card">
               <h3>Vondrášek s.r.o.</h3>
-              <p>Google reklamy, web, e-commerce.</p>
+              <p>Multimodální logistický systém.</p>
               <div className="ref-highlight">
                 <CountUp end={120} prefix="+" suffix=" % YTY" />
               </div>
