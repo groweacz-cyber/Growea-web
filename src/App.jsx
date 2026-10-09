@@ -140,7 +140,7 @@ export default function App() {
 
           <div className="hero-contact">
             <span>📧 groweacz@gmail.com</span>
-            <span>📞 +420 607 463 288</span>
+            <span>📞 +420 720 385 282</span>
           </div>
         </div>
 
@@ -581,7 +581,7 @@ export default function App() {
 
           <div className="footer-contact">
             <span>groweacz@gmail.com</span>
-            <span>+420 607 463 288</span>
+            <span>+420 720 385 282</span>
           </div>
 
           <div className="footer-copy">

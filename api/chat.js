@@ -31,7 +31,7 @@ Growea je česká firma zaměřená na:
 
 Kontakt:
 - Email: groweacz@gmail.com
-- Telefon: +420 607 463 288
+- Telefon: +420 720 385 282
 
 Odpovídej stručně, vstřícně a vždy v češtině. Pokud návštěvník chce konkrétní nabídku nebo cenu, doporuč mu napsat email nebo zavolat. Buď struční — max 3-4 věty.`,
           },
