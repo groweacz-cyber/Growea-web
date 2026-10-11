@@ -592,6 +592,39 @@ body::before {
   font-size: 34px;
 }
 
+.ref-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ref-site {
+  display: block;
+  margin-top: auto;
+  padding-top: 28px;
+  color: #a8a8b0;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.ref-site img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.ref-site:hover {
+  color: #64d8ff;
+}
+
+.ref-site:hover img {
+  border-color: rgba(107, 124, 255, 0.5);
+}
+
 /* ===== DOMAINS ===== */
 .domains {
   display: grid;

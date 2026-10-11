@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react"
 import { Analytics } from "@vercel/analytics/react"
 import logo from "../logo.png.png"
+import refKimchihero from "./assets/ref-kimchihero.jpg"
+import refVondrasek from "./assets/ref-vondrasek.jpg"
+import refPrenechto from "./assets/ref-prenechto.jpg"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
@@ -164,6 +167,10 @@ export default function App() {
               <div className="ref-highlight">
                 <CountUp end={50} prefix="+" suffix=" % YTY" />
               </div>
+              <a className="ref-site" href="https://kimchihero.cz" target="_blank" rel="noopener noreferrer">
+                <img src={refKimchihero} alt="Náhled webu kimchihero.cz" loading="lazy" />
+                <span>kimchihero.cz ↗</span>
+              </a>
             </div>
 
             <div className="ref-card">
@@ -172,6 +179,10 @@ export default function App() {
               <div className="ref-highlight">
                 Inovativní AI systém plně optimalizující dopravní i provozní náklady společnosti.
               </div>
+              <a className="ref-site" href="https://autodoprava-vondrasek.eu" target="_blank" rel="noopener noreferrer">
+                <img src={refVondrasek} alt="Náhled webu autodoprava-vondrasek.eu" loading="lazy" />
+                <span>autodoprava-vondrasek.eu ↗</span>
+              </a>
             </div>
 
             <div className="ref-card">
@@ -180,6 +191,10 @@ export default function App() {
               <div className="ref-highlight">
                 Nový projekt 2026
               </div>
+              <a className="ref-site" href="https://prenechto.cz" target="_blank" rel="noopener noreferrer">
+                <img src={refPrenechto} alt="Náhled webu prenechto.cz" loading="lazy" />
+                <span>prenechto.cz ↗</span>
+              </a>
             </div>
           </div>
         </section>
