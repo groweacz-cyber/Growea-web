@@ -447,7 +447,7 @@ body::before {
 .domains,
 .tech,
 .contact {
-  padding: 130px 60px;
+  padding: 40px 60px;
   position: relative;
   z-index: 2;
 }
@@ -931,7 +931,7 @@ body::before {
   .domains,
   .tech,
   .contact {
-    padding: 80px 20px;
+    padding: 28px 20px;
   }
 
   .card,
@@ -1803,7 +1803,7 @@ body {
 }
 /* ===== AUDIT SECTION ===== */
 .audit-section {
-  padding: 130px 60px;
+  padding: 40px 60px;
   position: relative;
   z-index: 2;
   max-width: 900px;
@@ -1840,7 +1840,7 @@ body {
 
 @media (max-width: 768px) {
   .audit-section {
-    padding: 80px 20px;
+    padding: 28px 20px;
   }
 }
 /* ===== NAV AUDIT BUTTON ===== */
