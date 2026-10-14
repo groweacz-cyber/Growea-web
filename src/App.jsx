@@ -597,6 +597,7 @@ export default function App() {
           <div className="footer-contact">
             <span>groweacz@gmail.com</span>
             <span>+420 720 385 282</span>
+            <span>IČ: 87690772</span>
           </div>
 
           <div className="footer-copy">
