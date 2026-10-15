@@ -4,6 +4,7 @@ import logo from "../logo.png.png"
 import refKimchihero from "./assets/ref-kimchihero.jpg"
 import refVondrasek from "./assets/ref-vondrasek.jpg"
 import refPrenechto from "./assets/ref-prenechto.jpg"
+import refOcdmentor from "./assets/ref-ocdmentor.jpg"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
@@ -194,6 +195,18 @@ export default function App() {
               <a className="ref-site" href="https://prenechto.cz" target="_blank" rel="noopener noreferrer">
                 <img src={refPrenechto} alt="Náhled webu prenechto.cz" loading="lazy" />
                 <span>prenechto.cz ↗</span>
+              </a>
+            </div>
+
+            <div className="ref-card">
+              <h3>OCDmentor.cz</h3>
+              <p>Peer mentoring pro lidi s OCD.</p>
+              <div className="ref-highlight">
+                Včetně aplikace
+              </div>
+              <a className="ref-site" href="https://ocdmentor.cz" target="_blank" rel="noopener noreferrer">
+                <img src={refOcdmentor} alt="Náhled webu ocdmentor.cz" loading="lazy" />
+                <span>ocdmentor.cz ↗</span>
               </a>
             </div>
           </div>
