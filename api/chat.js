@@ -33,6 +33,7 @@ Kontakt:
 - Email: groweacz@gmail.com
 - Telefon: +420 720 385 282
 - IČ: 87690772
+- Bankovní spojení: 378566639/0300
 
 Odpovídej stručně, vstřícně a vždy v češtině. Pokud návštěvník chce konkrétní nabídku nebo cenu, doporuč mu napsat email nebo zavolat. Buď struční — max 3-4 věty.`,
           },

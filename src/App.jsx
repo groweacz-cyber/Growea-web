@@ -611,6 +611,7 @@ export default function App() {
             <span>groweacz@gmail.com</span>
             <span>+420 720 385 282</span>
             <span>IČ: 87690772</span>
+            <span>Účet: 378566639/0300</span>
           </div>
 
           <div className="footer-copy">
