@@ -5,6 +5,7 @@ import refKimchihero from "./assets/ref-kimchihero.jpg"
 import refVondrasek from "./assets/ref-vondrasek.jpg"
 import refPrenechto from "./assets/ref-prenechto.jpg"
 import refOcdmentor from "./assets/ref-ocdmentor.jpg"
+import refStridave from "./assets/ref-stridave.jpg"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
@@ -207,6 +208,18 @@ export default function App() {
               <a className="ref-site" href="https://ocdmentor.cz" target="_blank" rel="noopener noreferrer">
                 <img src={refOcdmentor} alt="Náhled webu ocdmentor.cz" loading="lazy" />
                 <span>ocdmentor.cz ↗</span>
+              </a>
+            </div>
+
+            <div className="ref-card">
+              <h3>Střídavě.cz</h3>
+              <p>První AI asistent pro funkční střídavou péči.</p>
+              <div className="ref-highlight">
+                AI asistent
+              </div>
+              <a className="ref-site" href="https://stridave.cz" target="_blank" rel="noopener noreferrer">
+                <img src={refStridave} alt="Náhled webu stridave.cz" loading="lazy" />
+                <span>stridave.cz ↗</span>
               </a>
             </div>
           </div>
