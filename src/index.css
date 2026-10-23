@@ -2138,11 +2138,34 @@ body {
   font-size: 1.3rem;
 }
 
-.cert-grid {
+.cert-layout {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.cert-subgrid {
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
   gap: 14px;
-  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .cert-layout {
+    flex-direction: column;
+  }
+
+  .cert-subgrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .cert-subgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cert-card {
@@ -2152,7 +2175,6 @@ body {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
   padding: 8px;
-  text-decoration: none;
   color: rgba(231, 236, 243, 0.75);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -2169,6 +2191,11 @@ body {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 8px;
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover img {
+  transform: scale(1.06);
 }
 
 .cert-card span {
@@ -2177,10 +2204,11 @@ body {
   text-align: center;
 }
 
-/* Hlavní (zastřešující) certifikát vyčnívá — přes dva sloupce, výraznější rámeček a popisek. */
+/* Hlavní (zastřešující) certifikát vyčnívá — vlevo, širší a vyšší než náhledy vpravo. */
 .cert-card-main {
-  grid-column: span 2;
-  padding: 12px;
+  flex: 0 0 300px;
+  justify-content: center;
+  padding: 14px;
   background: rgba(107, 124, 255, 0.08);
   border: 1px solid rgba(120, 160, 255, 0.5);
   box-shadow: 0 0 0 1px rgba(120, 160, 255, 0.15), 0 10px 30px rgba(95, 140, 255, 0.15);
@@ -2192,6 +2220,12 @@ body {
 
 .cert-card-main img {
   border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .cert-card-main {
+    flex-basis: auto;
+  }
 }
 
 .cert-card-main span {

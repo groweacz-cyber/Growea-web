@@ -584,51 +584,48 @@ export default function App() {
             </div>
           </div>
 
-          <h3 className="certs-title">Moje certifikáty</h3>
+          <h3 className="certs-title">Naše certifikace</h3>
 
-          <div className="cert-grid">
-            <a
-              className="cert-card cert-card-main"
-              href="https://coursera.org/verify/professional-cert/10ID2PTO36EX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="cert-layout">
+            <div className="cert-card cert-card-main">
               <img src={certMain} alt="Google AI Professional Certificate — Václav Kodeš" loading="lazy" />
               <span>Google AI Professional Certificate</span>
-            </a>
+            </div>
 
-            <a className="cert-card" href="https://coursera.org/verify/F6BNFVHWJIV2" target="_blank" rel="noopener noreferrer">
-              <img src={certFundamentals} alt="Certifikát AI Fundamentals" loading="lazy" />
-              <span>AI Fundamentals</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/3QNPSKXAG9QI" target="_blank" rel="noopener noreferrer">
-              <img src={certBrainstorming} alt="Certifikát AI for Brainstorming and Planning" loading="lazy" />
-              <span>AI for Brainstorming and Planning</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/C05YJH2MLHIQ" target="_blank" rel="noopener noreferrer">
-              <img src={certResearch} alt="Certifikát AI for Research and Insights" loading="lazy" />
-              <span>AI for Research and Insights</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/I13E7MVWFIG3" target="_blank" rel="noopener noreferrer">
-              <img src={certWriting} alt="Certifikát AI for Writing and Communicating" loading="lazy" />
-              <span>AI for Writing and Communicating</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/X9VV06QDMLJN" target="_blank" rel="noopener noreferrer">
-              <img src={certContent} alt="Certifikát AI for Content Creation" loading="lazy" />
-              <span>AI for Content Creation</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/2B77IBSA87FG" target="_blank" rel="noopener noreferrer">
-              <img src={certData} alt="Certifikát AI for Data Analysis" loading="lazy" />
-              <span>AI for Data Analysis</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/XYQ98BBDMWVC" target="_blank" rel="noopener noreferrer">
-              <img src={certAppBuilding} alt="Certifikát AI for App Building" loading="lazy" />
-              <span>AI for App Building</span>
-            </a>
-            <a className="cert-card" href="https://coursera.org/verify/61WVKPG33RGI" target="_blank" rel="noopener noreferrer">
-              <img src={certAppDeployment} alt="Certifikát AI for App Deployment" loading="lazy" />
-              <span>AI for App Deployment</span>
-            </a>
+            <div className="cert-subgrid">
+              <div className="cert-card">
+                <img src={certFundamentals} alt="Certifikát AI Fundamentals" loading="lazy" />
+                <span>AI Fundamentals</span>
+              </div>
+              <div className="cert-card">
+                <img src={certBrainstorming} alt="Certifikát AI for Brainstorming and Planning" loading="lazy" />
+                <span>AI for Brainstorming and Planning</span>
+              </div>
+              <div className="cert-card">
+                <img src={certResearch} alt="Certifikát AI for Research and Insights" loading="lazy" />
+                <span>AI for Research and Insights</span>
+              </div>
+              <div className="cert-card">
+                <img src={certWriting} alt="Certifikát AI for Writing and Communicating" loading="lazy" />
+                <span>AI for Writing and Communicating</span>
+              </div>
+              <div className="cert-card">
+                <img src={certContent} alt="Certifikát AI for Content Creation" loading="lazy" />
+                <span>AI for Content Creation</span>
+              </div>
+              <div className="cert-card">
+                <img src={certData} alt="Certifikát AI for Data Analysis" loading="lazy" />
+                <span>AI for Data Analysis</span>
+              </div>
+              <div className="cert-card">
+                <img src={certAppBuilding} alt="Certifikát AI for App Building" loading="lazy" />
+                <span>AI for App Building</span>
+              </div>
+              <div className="cert-card">
+                <img src={certAppDeployment} alt="Certifikát AI for App Deployment" loading="lazy" />
+                <span>AI for App Deployment</span>
+              </div>
+            </div>
           </div>
         </section>
       </Reveal>
