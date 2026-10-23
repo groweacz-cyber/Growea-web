@@ -6,6 +6,15 @@ import refVondrasek from "./assets/ref-vondrasek.jpg"
 import refPrenechto from "./assets/ref-prenechto.jpg"
 import refOcdmentor from "./assets/ref-ocdmentor.jpg"
 import refStridave from "./assets/ref-stridave.jpg"
+import certMain from "./assets/certs/cert-main.jpg"
+import certFundamentals from "./assets/certs/cert-fundamentals.jpg"
+import certBrainstorming from "./assets/certs/cert-brainstorming-planning.jpg"
+import certResearch from "./assets/certs/cert-research-insights.jpg"
+import certWriting from "./assets/certs/cert-writing-communicating.jpg"
+import certContent from "./assets/certs/cert-content-creation.jpg"
+import certData from "./assets/certs/cert-data-analysis.jpg"
+import certAppBuilding from "./assets/certs/cert-app-building.jpg"
+import certAppDeployment from "./assets/certs/cert-app-deployment.jpg"
 import "./index.css"
 import ChatWidget from "./ChatWidget"
 import CookieConsent from "./CookieConsent"
@@ -573,6 +582,53 @@ export default function App() {
               <h4>Hormozi</h4>
               <p>Nabídky a money models</p>
             </div>
+          </div>
+
+          <h3 className="certs-title">Moje certifikáty</h3>
+
+          <div className="cert-grid">
+            <a
+              className="cert-card cert-card-main"
+              href="https://coursera.org/verify/professional-cert/10ID2PTO36EX"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={certMain} alt="Google AI Professional Certificate — Václav Kodeš" loading="lazy" />
+              <span>Google AI Professional Certificate</span>
+            </a>
+
+            <a className="cert-card" href="https://coursera.org/verify/F6BNFVHWJIV2" target="_blank" rel="noopener noreferrer">
+              <img src={certFundamentals} alt="Certifikát AI Fundamentals" loading="lazy" />
+              <span>AI Fundamentals</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/3QNPSKXAG9QI" target="_blank" rel="noopener noreferrer">
+              <img src={certBrainstorming} alt="Certifikát AI for Brainstorming and Planning" loading="lazy" />
+              <span>AI for Brainstorming and Planning</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/C05YJH2MLHIQ" target="_blank" rel="noopener noreferrer">
+              <img src={certResearch} alt="Certifikát AI for Research and Insights" loading="lazy" />
+              <span>AI for Research and Insights</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/I13E7MVWFIG3" target="_blank" rel="noopener noreferrer">
+              <img src={certWriting} alt="Certifikát AI for Writing and Communicating" loading="lazy" />
+              <span>AI for Writing and Communicating</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/X9VV06QDMLJN" target="_blank" rel="noopener noreferrer">
+              <img src={certContent} alt="Certifikát AI for Content Creation" loading="lazy" />
+              <span>AI for Content Creation</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/2B77IBSA87FG" target="_blank" rel="noopener noreferrer">
+              <img src={certData} alt="Certifikát AI for Data Analysis" loading="lazy" />
+              <span>AI for Data Analysis</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/XYQ98BBDMWVC" target="_blank" rel="noopener noreferrer">
+              <img src={certAppBuilding} alt="Certifikát AI for App Building" loading="lazy" />
+              <span>AI for App Building</span>
+            </a>
+            <a className="cert-card" href="https://coursera.org/verify/61WVKPG33RGI" target="_blank" rel="noopener noreferrer">
+              <img src={certAppDeployment} alt="Certifikát AI for App Deployment" loading="lazy" />
+              <span>AI for App Deployment</span>
+            </a>
           </div>
         </section>
       </Reveal>

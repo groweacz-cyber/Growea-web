@@ -2131,6 +2131,80 @@ body {
   font-size: 0.88rem;
   color: rgba(231, 236, 243, 0.65);
 }
+
+.certs-title {
+  text-align: center;
+  margin: 56px 0 24px;
+  font-size: 1.3rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px;
+  text-decoration: none;
+  color: rgba(231, 236, 243, 0.75);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(120, 160, 255, 0.4);
+}
+
+.cert-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.cert-card span {
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* Hlavní (zastřešující) certifikát vyčnívá — přes dva sloupce, výraznější rámeček a popisek. */
+.cert-card-main {
+  grid-column: span 2;
+  padding: 12px;
+  background: rgba(107, 124, 255, 0.08);
+  border: 1px solid rgba(120, 160, 255, 0.5);
+  box-shadow: 0 0 0 1px rgba(120, 160, 255, 0.15), 0 10px 30px rgba(95, 140, 255, 0.15);
+}
+
+.cert-card-main:hover {
+  border-color: rgba(120, 160, 255, 0.8);
+}
+
+.cert-card-main img {
+  border-radius: 10px;
+}
+
+.cert-card-main span {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #e7ecf3;
+}
+
+@media (max-width: 560px) {
+  .cert-card-main {
+    grid-column: span 2;
+  }
+}
 /* ============================================
    FOUNDER INTRO
    ============================================ */
