@@ -6,6 +6,7 @@ import refVondrasek from "./assets/ref-vondrasek.jpg"
 import refPrenechto from "./assets/ref-prenechto.jpg"
 import refOcdmentor from "./assets/ref-ocdmentor.jpg"
 import refStridave from "./assets/ref-stridave.jpg"
+import refOpatruj from "./assets/ref-opatruj.jpg"
 import certMain from "./assets/certs/cert-main.jpg"
 import certFundamentals from "./assets/certs/cert-fundamentals.jpg"
 import certBrainstorming from "./assets/certs/cert-brainstorming-planning.jpg"
@@ -229,6 +230,21 @@ export default function App() {
               <a className="ref-site" href="https://stridave.cz" target="_blank" rel="noopener noreferrer">
                 <img src={refStridave} alt="Náhled webu stridave.cz" loading="lazy" />
                 <span>stridave.cz ↗</span>
+              </a>
+            </div>
+
+            <div className="ref-card">
+              <h3>Opatruj.cz</h3>
+              <p>
+                Pro dospělé, kteří pečují o blízkého s demencí nebo
+                Alzheimerovou chorobou: děti, partneři i sourozenci.
+              </p>
+              <div className="ref-highlight">
+                Nový projekt 2026
+              </div>
+              <a className="ref-site" href="https://opatruj.cz" target="_blank" rel="noopener noreferrer">
+                <img src={refOpatruj} alt="Náhled webu opatruj.cz" loading="lazy" />
+                <span>opatruj.cz ↗</span>
               </a>
             </div>
           </div>

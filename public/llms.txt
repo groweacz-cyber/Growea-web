@@ -28,6 +28,7 @@ Growea poskytuje komplexní AI marketing a social marketing pro firmy, e-shopy, 
 - Přenechto.cz — tržiště pro přenechání nevyužitých zájezdů, poukazů a vstupenek
 - OCDmentor.cz — peer mentoring pro lidi s OCD včetně aplikace
 - Střídavě.cz — první AI asistent pro funkční střídavou péči
+- Opatruj.cz — pro dospělé, kteří pečují o blízkého s demencí nebo Alzheimerovou chorobou: děti, partneři i sourozenci
 
 ## Pro koho je Growea určena
 - Malé a střední firmy
