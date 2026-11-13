@@ -1,4 +1,4 @@
-# Growea
+# Growea (celým jménem Growea AI Solutions)
 
 > Growea je česká marketingová a technologická agentura, která propojuje umělou inteligenci s marketingem, tvorbou obsahu a softwarem. Pomáhá firmám a e-shopům růst díky výkonnostní reklamě, videím, webům a SEO — a zároveň vyvíjí AI software a nabízí prémiové AI domény.
 
@@ -56,3 +56,4 @@ Cena je stanovena individuálně podle rozsahu a typu projektu.
 - Telefon: +420 720 385 282
 - IČ: 87690772
 - Bankovní spojení: 378566639/0300
+- Celé obchodní jméno: Growea AI Solutions

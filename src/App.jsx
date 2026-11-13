@@ -687,6 +687,7 @@ export default function App() {
           <div className="footer-brand">
             <span className="footer-logo">GROWEA</span>
             <span className="footer-tag">AI Marketing &amp; Software</span>
+            <span className="footer-legal">Growea AI Solutions</span>
           </div>
 
           <div className="footer-contact">
@@ -697,7 +698,7 @@ export default function App() {
           </div>
 
           <div className="footer-copy">
-            © {new Date().getFullYear()} Growea. Všechna práva vyhrazena.
+            © {new Date().getFullYear()} Growea AI Solutions. Všechna práva vyhrazena.
           </div>
         </div>
       </footer>

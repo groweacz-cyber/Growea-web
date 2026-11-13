@@ -783,7 +783,15 @@ body::before {
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 14px;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.footer-legal {
+  flex-basis: 100%;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 0.3px;
 }
 
 .footer-logo {
